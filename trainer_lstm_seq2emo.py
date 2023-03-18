@@ -3,7 +3,8 @@ import random
 from torch.utils.data import Dataset, DataLoader
 import torch
 import numpy as np
-from models.seq2seq_lstm import LSTMSeq2Seq, SKEPSeq2Seq
+from models.seq2seq_lstm import LSTMSeq2Seq
+from models.seq2seq_skep import SKEPSeq2Seq
 import torch.nn as nn
 from transformers import RobertaTokenizer
 import torch.optim as optim
