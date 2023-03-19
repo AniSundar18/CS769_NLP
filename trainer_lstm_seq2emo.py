@@ -269,8 +269,11 @@ def eval(model, best_model, loss_criterion, es, dev_loader, dev_set):
         src, src_len, trg = loader_input
 
         with torch.no_grad():
-            elmo_src = elmo_encode(src)
-            decoder_logit = model(src.cuda(), src_len.cuda(), elmo_src.cuda())
+            if args.encoder_model == 'LSTM':
+                elmo_src = elmo_encode(src)
+                decoder_logit = model(src.cuda(), src_len.cuda(), elmo_src.cuda())
+            elif args.encoder_model == 'SKEP':
+                decoder_logit = model(src.cuda(), src_len.cuda())
             test_loss = loss_criterion(
                 decoder_logit.view(-1, decoder_logit.shape[-1]),
                 trg.view(-1).cuda()
