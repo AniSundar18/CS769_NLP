@@ -142,7 +142,8 @@ if args.encoder_model == 'LSTM':
             X_train_dev, y_train_dev, X_test, y_test, EMOS, EMOS_DIC, data_set_name = pkl.load(f)
 
 elif args.encoder_model == 'SKEP':
-    skep_tokenizer = RobertaTokenizer.from_pretrained('Yaxin/roberta-large-ernie2-skep-en', padding=True, truncation=True)
+    skep_tokenizer = RobertaTokenizer.from_pretrained('Yaxin/roberta-large-ernie2-skep-en', padding='max_length', truncation=True, max_length=42)
+    print("Token: ", skep_tokenizer.pad_token)
     data_path_postfix = '_split'
     data_pkl_path = 'data/' + args.dataset + data_path_postfix + '_data.pkl'
     if not os.path.isfile(data_pkl_path):
@@ -173,12 +174,12 @@ class SKEPTestDataReader(Dataset):
         self.skep_ids = []
         self.skep_ids_len = []
         self.skep_len = pad_len
-        self.skep_glove_ids(X)
+        self.build_skep_ids(X)
 
     def build_skep_ids(self, X):
         for src in X:
-            tokenized_text = skep_tokenizer.tokenize(src)
-            indexed_tokens = skep_tokenizer.convert_tokens_to_ids(tokenized_text)
+            indexed_tokens = skep_tokenizer(src, padding='max_length', truncation = True, max_length=50)['input_ids']
+            #indexed_tokens = skep_tokenizer.convert_tokens_to_ids(tokenized_text)
             skep_id, skep_id_len = indexed_tokens, len(indexed_tokens)
             self.skep_ids.append(skep_id)
             self.skep_ids_len.append(skep_id_len)
@@ -367,7 +368,7 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
             test_loader = DataLoader(test_set, batch_size=BATCH_SIZE*3, shuffle=False)
             model = SKEPSeq2Seq(
                 emb_dim=SRC_EMB_DIM,
-                vocab_size=glove_tokenizer.get_vocab_size(),
+                vocab_size=skep_tokenizer.vocab_size,
                 trg_vocab_size=NUM_EMO,
                 src_hidden_dim=SRC_HIDDEN_DIM,
                 trg_hidden_dim=TGT_HIDDEN_DIM,
@@ -405,9 +406,9 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
             logger('use glorot initialization')
             for group in para_group:
                 nn_utils.glorot_init(group['params'])
-
-        model.load_encoder_embedding(glove_tokenizer.get_embeddings(), fix_emb=args.fix_emb)
-        model.load_emotion_embedding(glove_tokenizer.get_emb_by_words(GLOVE_EMB_PATH, EMOS))
+        if args.encoder_model == 'LSTM':
+            model.load_encoder_embedding(glove_tokenizer.get_embeddings(), fix_emb=args.fix_emb)
+            model.load_emotion_embedding(glove_tokenizer.get_emb_by_words(GLOVE_EMB_PATH, EMOS))
         model.cuda()
 
         # Start training
@@ -422,19 +423,19 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
                 # print('Current encoder learning rate', scheduler.get_lr())
                 # print('Current decoder learning rate', scheduler.get_lr())
 
-
             for i, loader_input in tqdm(enumerate(train_loader), total=int(len(train_set) / BATCH_SIZE)):
                 model.train()
                 update_step += 1
                 # print('i=%d: ' % (i))
                 # trg = torch.index_select(trg, 1, torch.LongTensor(list(range(1, len(EMOS)+1))))
                 src, src_len, trg = loader_input
-
                 optimizer.zero_grad()
-
-                elmo_src = elmo_encode(src)
-
-                decoder_logit = model(src.cuda(), src_len.cuda(), elmo_src.cuda())
+                if args.encoder_model == 'LSTM':
+                    elmo_src = elmo_encode(src)
+                    decoder_logit = model(src.cuda(), src_len.cuda(), elmo_src.cuda())
+                else :
+                    elmo_src = None
+                    decoder_logit = model(src.cuda(), src_len.cuda())
 
                 loss = loss_criterion(
                     decoder_logit.view(-1, decoder_logit.shape[-1]),
@@ -490,13 +491,13 @@ def main():
         new_order = np.asarray([int(tmp) for tmp in args.shuffle_emo.split()])
         y_train_dev = np.asarray(y_train_dev).T[new_order].T
         y_test = np.asarray(y_test).T[new_order].T
-
-    glove_tokenizer.build_tokenizer(X_train_dev + X_test, vocab_size=VOCAB_SIZE)
-    glove_tokenizer.build_embedding(GLOVE_EMB_PATH, dataset_name=data_set_name)
+    if args.encoder_model == 'LSTM':
+        glove_tokenizer.build_tokenizer(X_train_dev + X_test, vocab_size=VOCAB_SIZE)
+        glove_tokenizer.build_embedding(GLOVE_EMB_PATH, dataset_name=data_set_name)
 
     from sklearn.model_selection import ShuffleSplit, KFold
 
-    kf = KFold(n_splits=args.folds, random_state=args.dev_split_seed)
+    kf = KFold(n_splits=args.folds, random_state=None)
     # kf.get_n_splits(X_train_dev)
 
     all_preds = []
