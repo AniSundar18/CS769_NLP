@@ -469,11 +469,15 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
         for i, loader_input in tqdm(enumerate(test_loader), total=int(len(test_set) / BATCH_SIZE)):
             with torch.no_grad():
                 src, src_len = loader_input
-                elmo_src = elmo_encode(src)
-                decoder_logit = model(src.cuda(), src_len.cuda(), elmo_src.cuda())
-                preds.append(np.argmax(decoder_logit.data.cpu().numpy(), axis=-1))
-                del decoder_logit
-
+                if args.encoder_model == "LSTM":
+                    elmo_src = elmo_encode(src)
+                    decoder_logit = model(src.cuda(), src_len.cuda(), elmo_src.cuda())
+                    preds.append(np.argmax(decoder_logit.data.cpu().numpy(), axis=-1))
+                    del decoder_logit
+                elif args.encoder_model == 'SKEP':
+                    decoder_logit = model(src.cuda(), src_len.cuda())
+                    preds.append(np.argmax(decoder_logit.data.cpu().numpy(), axis=-1))
+                    del decoder_logit
         preds = np.concatenate(preds, axis=0)
         gold = np.asarray(y_test)
         binary_gold = gold
