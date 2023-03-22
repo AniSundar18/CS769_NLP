@@ -15,14 +15,14 @@ class LSTMEncoder(nn.Module):
     """
     A Hierarchical LSTM with for 3 turns dialogue
     """
-    def __init__(self, embedding_dim, hidden_dim, vocab_size, encoder_dropout=0):
+    def __init__(self, embedding_dim, hidden_dim, vocab_size, encoder_dropout=0,emb_dim = 768):
         super(LSTMEncoder, self).__init__()
         self.SENT_LSTM_DIM = hidden_dim
         self.bidirectional = True
 
         self.sent_lstm_directions = 2 if self.bidirectional else 1
 
-        self.elmo_dim = 1024
+        self.elmo_dim = emb_dim
 
         self.num_layers = 2
 
@@ -64,11 +64,14 @@ class LSTMEncoder(nn.Module):
 
         elmo_x = elmo_x[perm_idx]
         elmo_x = self.drop_out(elmo_x)
+        elmo_x = elmo_x[:, :max_len, :]
+        #print(emb_x.shape, elmo_x.shape)
         emb_x = torch.cat((emb_x, elmo_x), dim=2)
 
         packed_input = nn.utils.rnn.pack_padded_sequence(emb_x, x_len_sorted.cpu().numpy(), batch_first=True)
         if hidden is None:
             hidden = self.init_hidden(x)
+
         packed_output, hidden = lstm(packed_input, hidden)
         output, unpacked_len = nn.utils.rnn.pad_packed_sequence(packed_output, batch_first=True)
 

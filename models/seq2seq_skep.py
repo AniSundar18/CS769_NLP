@@ -49,7 +49,7 @@ class SKEPSeq2Seq(nn.Module):
         )
         self.encoder2decoder_scr_hm = nn.Linear(50265, trg_hidden_dim, bias=False)
         self.encoder2decoder_ctx = nn.Linear(50265, trg_hidden_dim, bias=False)
-        self.encoder.requires_grad = self.args.encoder_requires_grad
+        #self.encoder.requires_grad = self.args.encoder_requires_grad
 
 
 
@@ -65,6 +65,7 @@ class SKEPSeq2Seq(nn.Module):
         
         decoder_h_0 = torch.tanh(self.encoder2decoder_scr_hm(src_h_m))  # torch.cat((src_h_t[-1], src_h_t[-2]), 1)
         decoder_c_0 = torch.zeros((cur_batch_size, self.decoder.hidden_size)).cuda()
+        #print(decoder_h_0.shape, decoder_c_0.shape)
         ctx = self.encoder2decoder_ctx(src_h)
         
         decoder_logit= self.decoder(

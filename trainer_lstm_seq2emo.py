@@ -4,9 +4,10 @@ from torch.utils.data import Dataset, DataLoader
 import torch
 import numpy as np
 from models.seq2seq_lstm import LSTMSeq2Seq
-from models.seq2seq_skep import SKEPSeq2Seq
+
 import torch.nn as nn
 from transformers import RobertaTokenizer
+from transformers import BertTokenizer, BertModel
 import torch.optim as optim
 from tqdm import tqdm
 from utils.early_stopping import EarlyStopping
@@ -106,7 +107,7 @@ random.seed(RANDOM_SEED)
 
 
 # Init Elmo model
-if args.encoder_model == 'LSTM':
+if True:
     if args.download_elmo:
         options_file = "https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_options.json"
         weight_file = "https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5"
@@ -141,7 +142,7 @@ if args.encoder_model == 'LSTM':
             logger('loading file')
             X_train_dev, y_train_dev, X_test, y_test, EMOS, EMOS_DIC, data_set_name = pkl.load(f)
 
-elif args.encoder_model == 'SKEP':
+if args.encoder_model == 'SKEP':
     skep_tokenizer = RobertaTokenizer.from_pretrained('Yaxin/roberta-large-ernie2-skep-en', padding='max_length', truncation=True, max_length=42)
     print("Token: ", skep_tokenizer.pad_token)
     data_path_postfix = '_split'
@@ -165,46 +166,13 @@ elif args.encoder_model == 'SKEP':
             logger('loading file')
             X_train_dev, y_train_dev, X_test, y_test, EMOS, EMOS_DIC, data_set_name = pkl.load(f)
 
+elif args.encoder_model == 'BERT':
+    bert_tokenizer = BertTokenizer.from_pretrained('bert-base-cased', padding = 'max_len', max_length=42, truncation = True, )
+    bert_model = BertModel.from_pretrained("bert-base-uncased")
+
 
 
 NUM_EMO = len(EMOS)
-
-class SKEPTestDataReader(Dataset):
-    def __init__(self, X, pad_len):
-        self.skep_ids = []
-        self.skep_ids_len = []
-        self.skep_len = pad_len
-        self.build_skep_ids(X)
-
-    def build_skep_ids(self, X):
-        for src in X:
-            indexed_tokens = skep_tokenizer(src, padding='max_length', truncation = True, max_length=50)['input_ids']
-            #indexed_tokens = skep_tokenizer.convert_tokens_to_ids(tokenized_text)
-            skep_id, skep_id_len = indexed_tokens, len(indexed_tokens)
-            self.skep_ids.append(skep_id)
-            self.skep_ids_len.append(skep_id_len)
-
-    def __len__(self):
-        return len(self.skep_ids)
-
-    def __getitem__(self, idx):
-        return torch.LongTensor(self.skep_ids[idx]), \
-               torch.LongTensor([self.skep_ids_len[idx]])
-
-
-class SKEPTrainDataReader(SKEPTestDataReader):
-    def __init__(self, X, y, pad_len):
-        super(SKEPTrainDataReader, self).__init__(X, pad_len)
-        self.y = []
-        self.read_target(y)
-
-    def read_target(self, y):
-        self.y = y
-
-    def __getitem__(self, idx):
-        return torch.LongTensor(self.skep_ids[idx]), \
-               torch.LongTensor([self.skep_ids_len[idx]]), \
-               torch.LongTensor(self.y[idx])
 
 
 class TestDataReader(Dataset):
@@ -251,6 +219,12 @@ def elmo_encode(ids):
         elmo_emb = (elmo_emb[0] + elmo_emb[1]) / 2  # avg of two layers
     return elmo_emb
 
+def bert_encode(ids):
+    data_text = [" ".join(glove_tokenizer.decode_ids(x)) for x in ids]
+    with torch.no_grad():
+        character_ids = bert_tokenizer(data_text, return_tensors='pt', padding='max_length', truncation = True, max_length=50)
+        bert_emb = bert_model(**character_ids).last_hidden_state
+    return bert_emb
 
 def show_classification_report(gold, pred):
     from sklearn.metrics import classification_report
@@ -272,8 +246,9 @@ def eval(model, best_model, loss_criterion, es, dev_loader, dev_set):
             if args.encoder_model == 'LSTM':
                 elmo_src = elmo_encode(src)
                 decoder_logit = model(src.cuda(), src_len.cuda(), elmo_src.cuda())
-            elif args.encoder_model == 'SKEP':
-                decoder_logit = model(src.cuda(), src_len.cuda())
+            elif args.encoder_model == 'BERT':
+                bert_src = bert_encode(src)
+                decoder_logit = model(src.cuda(), src_len.cuda(), bert_src.cuda())
             test_loss = loss_criterion(
                 decoder_logit.view(-1, decoder_logit.shape[-1]),
                 trg.view(-1).cuda()
@@ -285,6 +260,8 @@ def eval(model, best_model, loss_criterion, es, dev_loader, dev_set):
 
     preds = np.concatenate(preds, axis=0)
     gold = np.concatenate(gold, axis=0)
+    #print("Preds: ", preds)
+    #print("Gold: ", gold)
     # binary_gold = conver_to_binary(gold)
     # binary_preds = conver_to_binary(preds)
     metric = get_metrics(gold, preds)
@@ -335,56 +312,31 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
         
 
         # Model initialize
-        if args.encoder_model == 'LSTM':
-            train_set = TrainDataReader(X_train, y_train, MAX_LEN_DATA)
-            train_loader = DataLoader(train_set, batch_size=BATCH_SIZE, shuffle=True)
 
-            dev_set = TrainDataReader(X_dev, y_dev, MAX_LEN_DATA)
-            dev_loader = DataLoader(dev_set, batch_size=BATCH_SIZE*3, shuffle=False)
+        train_set = TrainDataReader(X_train, y_train, MAX_LEN_DATA)
+        train_loader = DataLoader(train_set, batch_size=BATCH_SIZE, shuffle=True)
 
-            test_set = TestDataReader(X_test, MAX_LEN_DATA)
-            test_loader = DataLoader(test_set, batch_size=BATCH_SIZE*3, shuffle=False)
-            model = LSTMSeq2Seq(
-                emb_dim=SRC_EMB_DIM,
-                vocab_size=glove_tokenizer.get_vocab_size(),
-                trg_vocab_size=NUM_EMO,
-                src_hidden_dim=SRC_HIDDEN_DIM,
-                trg_hidden_dim=TGT_HIDDEN_DIM,
-                attention_mode=ATTENTION,
-                batch_size=BATCH_SIZE,
-                nlayers=2,
-                nlayers_trg=2,
-                dropout=args.dropout,
-                encoder_dropout=args.encoder_dropout,
-                decoder_dropout=args.decoder_dropout,
-                attention_dropout=args.attention_dropout,
-                args=args
-            )
-        elif args.encoder_model == 'SKEP':
-            train_set = SKEPTrainDataReader(X_train, y_train, MAX_LEN_DATA)
-            train_loader = DataLoader(train_set, batch_size=BATCH_SIZE, shuffle=True)
+        dev_set = TrainDataReader(X_dev, y_dev, MAX_LEN_DATA)
+        dev_loader = DataLoader(dev_set, batch_size=BATCH_SIZE*3, shuffle=False)
 
-            dev_set = SKEPTrainDataReader(X_dev, y_dev, MAX_LEN_DATA)
-            dev_loader = DataLoader(dev_set, batch_size=BATCH_SIZE*3, shuffle=False)
-
-            test_set = SKEPTestDataReader(X_test, MAX_LEN_DATA)
-            test_loader = DataLoader(test_set, batch_size=BATCH_SIZE*3, shuffle=False)
-            model = SKEPSeq2Seq(
-                emb_dim=SRC_EMB_DIM,
-                vocab_size=skep_tokenizer.vocab_size,
-                trg_vocab_size=NUM_EMO,
-                src_hidden_dim=SRC_HIDDEN_DIM,
-                trg_hidden_dim=TGT_HIDDEN_DIM,
-                attention_mode=ATTENTION,
-                batch_size=BATCH_SIZE,
-                nlayers=2,
-                nlayers_trg=2,
-                dropout=args.dropout,
-                encoder_dropout=args.encoder_dropout,
-                decoder_dropout=args.decoder_dropout,
-                attention_dropout=args.attention_dropout,
-                args=args
-            )
+        test_set = TestDataReader(X_test, MAX_LEN_DATA)
+        test_loader = DataLoader(test_set, batch_size=BATCH_SIZE*3, shuffle=False)
+        model = LSTMSeq2Seq(
+            emb_dim=SRC_EMB_DIM,
+            vocab_size=glove_tokenizer.get_vocab_size(),
+            trg_vocab_size=NUM_EMO,
+            src_hidden_dim=SRC_HIDDEN_DIM,
+            trg_hidden_dim=TGT_HIDDEN_DIM,
+            attention_mode=ATTENTION,
+            batch_size=BATCH_SIZE,
+            nlayers=2,
+            nlayers_trg=2,
+            dropout=args.dropout,
+            encoder_dropout=args.encoder_dropout,
+            decoder_dropout=args.decoder_dropout,
+            attention_dropout=args.attention_dropout,
+            args=args
+        )
 
         if args.fix_emb:
             para_group = [
@@ -409,9 +361,9 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
             logger('use glorot initialization')
             for group in para_group:
                 nn_utils.glorot_init(group['params'])
-        if args.encoder_model == 'LSTM':
-            model.load_encoder_embedding(glove_tokenizer.get_embeddings(), fix_emb=args.fix_emb)
-            model.load_emotion_embedding(glove_tokenizer.get_emb_by_words(GLOVE_EMB_PATH, EMOS))
+
+        model.load_encoder_embedding(glove_tokenizer.get_embeddings(), fix_emb=args.fix_emb)
+        model.load_emotion_embedding(glove_tokenizer.get_emb_by_words(GLOVE_EMB_PATH, EMOS))
         model.cuda()
 
         # Start training
@@ -435,10 +387,11 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
                 optimizer.zero_grad()
                 if args.encoder_model == 'LSTM':
                     elmo_src = elmo_encode(src)
+                    #print(elmo_src.shape, src.shape)
                     decoder_logit = model(src.cuda(), src_len.cuda(), elmo_src.cuda())
-                else :
-                    elmo_src = None
-                    decoder_logit = model(src.cuda(), src_len.cuda())
+                elif args.encoder_model == 'BERT' :
+                    bert_src = bert_encode(src)[:,:src.shape[1],:]
+                    decoder_logit = model(src.cuda(), src_len.cuda(), bert_src.cuda())
 
                 loss = loss_criterion(
                     decoder_logit.view(-1, decoder_logit.shape[-1]),
@@ -474,8 +427,9 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
                     decoder_logit = model(src.cuda(), src_len.cuda(), elmo_src.cuda())
                     preds.append(np.argmax(decoder_logit.data.cpu().numpy(), axis=-1))
                     del decoder_logit
-                elif args.encoder_model == 'SKEP':
-                    decoder_logit = model(src.cuda(), src_len.cuda())
+                elif args.encoder_model == 'BERT':
+                    bert_src = bert_encode(src)
+                    decoder_logit = model(src.cuda(), src_len.cuda(), bert_src.cuda())
                     preds.append(np.argmax(decoder_logit.data.cpu().numpy(), axis=-1))
                     del decoder_logit
         preds = np.concatenate(preds, axis=0)
@@ -498,9 +452,9 @@ def main():
         new_order = np.asarray([int(tmp) for tmp in args.shuffle_emo.split()])
         y_train_dev = np.asarray(y_train_dev).T[new_order].T
         y_test = np.asarray(y_test).T[new_order].T
-    if args.encoder_model == 'LSTM':
-        glove_tokenizer.build_tokenizer(X_train_dev + X_test, vocab_size=VOCAB_SIZE)
-        glove_tokenizer.build_embedding(GLOVE_EMB_PATH, dataset_name=data_set_name)
+
+    glove_tokenizer.build_tokenizer(X_train_dev + X_test, vocab_size=VOCAB_SIZE)
+    glove_tokenizer.build_embedding(GLOVE_EMB_PATH, dataset_name=data_set_name)
 
     from sklearn.model_selection import ShuffleSplit, KFold
 
