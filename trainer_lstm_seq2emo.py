@@ -70,7 +70,7 @@ parser.add_argument('--load_emo_emb', action='store_true')
 parser.add_argument('--shuffle_emo', type=str, default=None)
 parser.add_argument('--single_direction', action='store_true')
 parser.add_argument('--encoder_model', type=str, default='LSTM')
-parser.add_argument('--encoder_requires_grad', type=bool, default=False)
+parser.add_argument('--transformer_type', type=str, default='base')
 args = parser.parse_args()
 
 if args.log_path is not None:
@@ -168,12 +168,16 @@ if args.encoder_model == 'SKEP':
             X_train_dev, y_train_dev, X_test, y_test, EMOS, EMOS_DIC, data_set_name = pkl.load(f)
 
 elif args.encoder_model == 'BERT':
-    bert_tokenizer = BertTokenizer.from_pretrained('bert-base-cased', padding = 'max_len', max_length=42, truncation = True, )
+    bert_tokenizer = BertTokenizer.from_pretrained('bert-base-cased', padding = 'max_len', max_length=42, truncation = True)
     bert_model = BertModel.from_pretrained("bert-base-uncased")
 
 elif args.encoder_model == 'RoBERTa':
-    roberta_tokenizer = AutoTokenizer.from_pretrained("roberta-base")
-    roberta_model = RobertaModel.from_pretrained("roberta-base")
+    if args.transformer_type == 'base':
+        model_type = 'roberta-base'
+    elif args.transformer_type == 'large':
+        model_type = 'roberta-large'
+    roberta_tokenizer = AutoTokenizer.from_pretrained(model_type)
+    roberta_model = RobertaModel.from_pretrained(model_type)
 
 
 NUM_EMO = len(EMOS)

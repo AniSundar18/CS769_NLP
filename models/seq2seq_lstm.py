@@ -35,7 +35,14 @@ class LSTMSeq2Seq(nn.Module):
         self.attention_mode = attention_mode
         self.bidirectional = True
         self.trg_vocab_size = trg_vocab_size
-        self.encoder = LSTMEncoder(emb_dim, src_hidden_dim, vocab_size, encoder_dropout=encoder_dropout)
+        if self.args.encoder_model == 'LSTM':
+            em_dim = 1024
+        elif self.args.encoder_model == 'BERT' or self.args.encoder_model == 'RoBERTa':
+            if self.args.transformer_type == 'base':
+                em_dim = 768
+            elif self.args.transformer_type == 'large':
+                em_dim = 1024
+        self.encoder = LSTMEncoder(emb_dim, src_hidden_dim, vocab_size, encoder_dropout=encoder_dropout, emb_dim = em_dim)
         self.args = args
         self.decoder = Seq2SeqDecoder(
             emb_dim,
@@ -62,10 +69,7 @@ class LSTMSeq2Seq(nn.Module):
     def forward(self, src, src_len, src_elmo, moji_id=None, moji_len=None):
         """Propogate input through the network."""
         # trg_emb = self.embedding(trg)
-        if self.args.encoder_model == 'LSTM':
-            src_h, (_, _) = self.encoder(src, src_len, src_elmo, emb_dim = 1024)
-        elif self.args.encoder_model == 'BERT' or self.args.encoder_model == 'RoBERTa':
-            src_h, (_, _) = self.encoder(src, src_len, src_elmo)
+        src_h, (_, _) = self.encoder(src, src_len, src_elmo)
         cur_batch_size = src_h.size()[0]
         # src_h_m = src_h_m.view(self.encoder.num_layers, 2, cur_batch_size, self.src_hidden_dim)[-1]
         # src_h_m = torch.cat((src_h_m[0], src_h_m[1]), dim=1)
