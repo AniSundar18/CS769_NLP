@@ -64,7 +64,7 @@ class LSTMSeq2Seq(nn.Module):
         # trg_emb = self.embedding(trg)
         if self.args.encoder_model == 'LSTM':
             src_h, (_, _) = self.encoder(src, src_len, src_elmo, emb_dim = 1024)
-        elif self.args.encoder_model == 'BERT':
+        elif self.args.encoder_model == 'BERT' or self.args.encoder_model == 'RoBERTa':
             src_h, (_, _) = self.encoder(src, src_len, src_elmo)
         cur_batch_size = src_h.size()[0]
         # src_h_m = src_h_m.view(self.encoder.num_layers, 2, cur_batch_size, self.src_hidden_dim)[-1]

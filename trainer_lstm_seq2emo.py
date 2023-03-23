@@ -7,6 +7,7 @@ from models.seq2seq_lstm import LSTMSeq2Seq
 
 import torch.nn as nn
 from transformers import RobertaTokenizer
+from transformers import AutoTokenizer, RobertaModel
 from transformers import BertTokenizer, BertModel
 import torch.optim as optim
 from tqdm import tqdm
@@ -170,6 +171,9 @@ elif args.encoder_model == 'BERT':
     bert_tokenizer = BertTokenizer.from_pretrained('bert-base-cased', padding = 'max_len', max_length=42, truncation = True, )
     bert_model = BertModel.from_pretrained("bert-base-uncased")
 
+elif args.encoder_model == 'RoBERTa':
+    roberta_tokenizer = AutoTokenizer.from_pretrained("roberta-base")
+    roberta_model = RobertaModel.from_pretrained("roberta-base")
 
 
 NUM_EMO = len(EMOS)
@@ -226,6 +230,13 @@ def bert_encode(ids):
         bert_emb = bert_model(**character_ids).last_hidden_state
     return bert_emb
 
+def roberta_encode(ids):
+    data_text = [" ".join(glove_tokenizer.decode_ids(x)) for x in ids]
+    with torch.no_grad():
+        character_ids = roberta_tokenizer(data_text, return_tensors='pt', padding='max_length', truncation = True, max_length=50)
+        roberta_emb = roberta_model(**character_ids).last_hidden_state
+    return roberta_emb
+
 def show_classification_report(gold, pred):
     from sklearn.metrics import classification_report
     logger(classification_report(gold, pred, target_names=EMOS, digits=4))
@@ -249,6 +260,9 @@ def eval(model, best_model, loss_criterion, es, dev_loader, dev_set):
             elif args.encoder_model == 'BERT':
                 bert_src = bert_encode(src)
                 decoder_logit = model(src.cuda(), src_len.cuda(), bert_src.cuda())
+            elif args.encoder_model == 'RoBERTa':
+                roberta_src = roberta_encode(src)
+                decoder_logit = model(src.cuda(), src_len.cuda(), roberta_src.cuda())
             test_loss = loss_criterion(
                 decoder_logit.view(-1, decoder_logit.shape[-1]),
                 trg.view(-1).cuda()
@@ -392,6 +406,9 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
                 elif args.encoder_model == 'BERT' :
                     bert_src = bert_encode(src)[:,:src.shape[1],:]
                     decoder_logit = model(src.cuda(), src_len.cuda(), bert_src.cuda())
+                elif args.encoder_model == 'RoBERTa' :
+                    roberta_src = roberta_encode(src)[:,:src.shape[1],:]
+                    decoder_logit = model(src.cuda(), src_len.cuda(), roberta_src.cuda())
 
                 loss = loss_criterion(
                     decoder_logit.view(-1, decoder_logit.shape[-1]),
@@ -432,6 +449,12 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
                     decoder_logit = model(src.cuda(), src_len.cuda(), bert_src.cuda())
                     preds.append(np.argmax(decoder_logit.data.cpu().numpy(), axis=-1))
                     del decoder_logit
+                elif args.encoder_model == "RoBERTa":
+                    roberta_src = roberta_encode(src)
+                    decoder_logit = model(src.cuda(), src_len.cuda(), roberta_src.cuda())
+                    preds.append(np.argmax(decoder_logit.data.cpu().numpy(), axis=-1))
+
+
         preds = np.concatenate(preds, axis=0)
         gold = np.asarray(y_test)
         binary_gold = gold
