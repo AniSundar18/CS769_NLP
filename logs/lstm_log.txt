@@ -1,0 +1,1977 @@
+
+loading file
+STARTING Fold ----------- 1
+Training on epoch=1 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.14235852472026458
+Normal: h_loss: 0.041088978588978586 macro F 0.011688907833043705 micro F 0.1126026531901453 micro P 0.6383169203222918 micro R 0.06174764007967438
+Multi only: h_loss: 0.07470711662878125 macro F 0.008746355685131197 micro F 0.03062960862166761
+Jaccard: 0.07017813267813268
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12409367992631927
+Normal: h_loss: 0.038123756873756874 macro F 0.06850741186819684 micro F 0.2339284402321652 micro P 0.7713178294573644 micro R 0.13787130856499524
+Multi only: h_loss: 0.07035757999650288 macro F 0.05950089891515081 micro F 0.1450199203187251
+Jaccard: 0.14835005460005463
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1079936301569095
+Normal: h_loss: 0.034343190593190596 macro F 0.13201247332568364 micro F 0.45607736406277144 micro P 0.6882209017825935 micro R 0.34104096302069803
+Multi only: h_loss: 0.06504633677216297 macro F 0.12346502109973265 micro F 0.31523239760699495
+Jaccard: 0.3642762080262081
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10167177665877987
+Normal: h_loss: 0.033443752193752195 macro F 0.1804819866603137 micro F 0.4805497188937475 micro P 0.6979544704717915 micro R 0.3664155191824716
+Multi only: h_loss: 0.0641939150201084 macro F 0.1606261839554082 micro F 0.3320445758471685
+Jaccard: 0.39146021021021044
+saving best model ...
+Training Loss for epoch 1: 0.12773326374350105
+Training on epoch=2 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09751440116023549
+Normal: h_loss: 0.03393734643734644 macro F 0.24454713497654984 micro F 0.4931746205089003 micro P 0.6673562878675927 micro R 0.39109725469819
+Multi only: h_loss: 0.06095908375590138 macro F 0.22433653775937687 micro F 0.3967120917153363
+Jaccard: 0.3966165028665032
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09454642986782645
+Normal: h_loss: 0.032675938925938924 macro F 0.2546871128836116 micro F 0.5044085842621859 micro P 0.7012025901942646 micro R 0.393868537282411
+Multi only: h_loss: 0.06157107885994055 macro F 0.22749615017318314 micro F 0.38318370921830525
+Jaccard: 0.40865069615069644
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09260163009532839
+Normal: h_loss: 0.03200318825318825 macro F 0.30163523958860156 micro F 0.5199363790928536 micro P 0.7089440622195633 micro R 0.41049623278773706
+Multi only: h_loss: 0.060849798915894385 macro F 0.254077074096416 micro F 0.38947368421052636
+Jaccard: 0.43099064974065016
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09104637389760052
+Normal: h_loss: 0.03192640692640693 macro F 0.28793152431131014 micro F 0.4954934134504276 micro P 0.7443152230515535 micro R 0.3713518662856153
+Multi only: h_loss: 0.06041265955586641 macro F 0.2309222367334302 micro F 0.37943421643466546
+Jaccard: 0.3885118072618075
+patience 1 not best model , ignoring ...
+Training Loss for epoch 2: 0.0955873454719846
+Training on epoch=3 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.0905603841679395
+Normal: h_loss: 0.03161928161928162 macro F 0.32104654610595035 micro F 0.5345031757993326 micro P 0.70615844118902 micro R 0.42998181345804104
+Multi only: h_loss: 0.05835810456373492 macro F 0.28354961301996195 micro F 0.42973088423750533
+Jaccard: 0.44377559377559406
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08854752625235761
+Normal: h_loss: 0.03122074997074997 macro F 0.3358147553080492 micro F 0.5448051601897755 micro P 0.7085413200221853 micro R 0.4425391876677925
+Multi only: h_loss: 0.05910124147578248 macro F 0.2729981510072054 micro F 0.418494623655914
+Jaccard: 0.4610223860223861
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08881201856845133
+Normal: h_loss: 0.031345062595062596 macro F 0.3249732022384646 micro F 0.5259607409455349 micro P 0.7274395839706332 micro R 0.41188187407984755
+Multi only: h_loss: 0.05894824269977269 macro F 0.2717712838208855 micro F 0.4117775354416576
+Jaccard: 0.4280422467922473
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08857381561684081
+Normal: h_loss: 0.03140356265356265 macro F 0.34621877150101155 micro F 0.551652137599833 micro P 0.6943495400788436 micro R 0.45760803671949424
+Multi only: h_loss: 0.058860814827767095 macro F 0.2891566646481817 micro F 0.42981156044886726
+Jaccard: 0.47577122577122594
+saving best model ...
+Training Loss for epoch 3: 0.08663978219090263
+Training on epoch=4 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08935256933916992
+Normal: h_loss: 0.03183865683865684 macro F 0.3634395405605181 micro F 0.5493220163544146 micro P 0.682572347266881 micro R 0.4595998960769031
+Multi only: h_loss: 0.05962580870781605 macro F 0.29943213488437764 micro F 0.4278523489932886
+Jaccard: 0.4764997952497953
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08934092034725358
+Normal: h_loss: 0.0316997191997192 macro F 0.3936121581887745 micro F 0.5577884321126185 micro P 0.6784960913264673 micro R 0.47354291157876505
+Multi only: h_loss: 0.05776796642769715 macro F 0.33907601088375994 micro F 0.4571780653111522
+Jaccard: 0.4839646464646465
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08757232870970663
+Normal: h_loss: 0.031052562302562304 macro F 0.3638442711546345 micro F 0.5547575360419398 micro P 0.7028427205100957 micro R 0.4582142547847926
+Multi only: h_loss: 0.058773386955761495 macro F 0.30613507324374717 micro F 0.43282008015186674
+Jaccard: 0.47566202566202553
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08935928024369903
+Normal: h_loss: 0.032207938457938456 macro F 0.375202378498306 micro F 0.5618066955180818 micro P 0.6600046750818139 micro R 0.4890447735342513
+Multi only: h_loss: 0.05781168036369995 macro F 0.32964757813348083 micro F 0.46163240382658244
+Jaccard: 0.4950365137865135
+saving best model ...
+Training Loss for epoch 4: 0.07886513515969705
+Training on epoch=5 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09446938892400822
+Normal: h_loss: 0.03207265707265707 macro F 0.42429189455897653 micro F 0.5614877024595081 micro P 0.6640652713728272 micro R 0.48636009353078724
+Multi only: h_loss: 0.05704668648365099 macro F 0.378647034773707 micro F 0.472940226171244
+Jaccard: 0.493383155883156
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09360126592676528
+Normal: h_loss: 0.03260647010647011 macro F 0.38601109754584273 micro F 0.5464347472281558 micro P 0.6619839802834258 micro R 0.465229063826102
+Multi only: h_loss: 0.05923238328379087 macro F 0.3325782766848401 micro F 0.4375259443752594
+Jaccard: 0.4806203931203932
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09073443040800915
+Normal: h_loss: 0.03176187551187551 macro F 0.412976445659018 micro F 0.559460418885339 micro P 0.67498776309349 micro R 0.4776998354550966
+Multi only: h_loss: 0.05846738940374191 macro F 0.3648712231651122 micro F 0.4471998346765861
+Jaccard: 0.494278938028938
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09238737338298075
+Normal: h_loss: 0.0316997191997192 macro F 0.37717040598607554 micro F 0.5564309833213956 micro P 0.6798349793724215 micro R 0.47094483415605787
+Multi only: h_loss: 0.058860814827767095 macro F 0.31838869566061867 micro F 0.4416338378602529
+Jaccard: 0.48719799344799336
+patience 4 not best model , ignoring ...
+Training Loss for epoch 5: 0.0696856922119035
+Training on epoch=6 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09880425764536097
+Normal: h_loss: 0.03280025155025155 macro F 0.4142432942848377 micro F 0.554987846619376 micro P 0.6495587552252671 micro R 0.48445483675413525
+Multi only: h_loss: 0.05713411435565658 macro F 0.36173449500812976 micro F 0.47213247172859446
+Jaccard: 0.48878310128310126
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.0983569671100129
+Normal: h_loss: 0.03271615771615772 macro F 0.42538792493293004 micro F 0.5580798103516397 micro P 0.6493506493506493 micro R 0.48930458127652204
+Multi only: h_loss: 0.05765868158769016 macro F 0.38902520261172396 micro F 0.47070626003210275
+Jaccard: 0.4929651242151243
+patience 6 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09859722773990702
+Normal: h_loss: 0.032796595296595295 macro F 0.41980610379981054 micro F 0.5522611560347409 micro P 0.6518204312477908 micro R 0.4790854767472071
+Multi only: h_loss: 0.05728711313166637 macro F 0.3722905661193897 micro F 0.46824913775613713
+Jaccard: 0.4874522249522248
+patience 7 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09994481073770242
+Normal: h_loss: 0.03277831402831403 macro F 0.3946229301963752 micro F 0.5557262500619455 micro P 0.6495597775718258 micro R 0.48558067030397506
+Multi only: h_loss: 0.058991956635775486 macro F 0.3377648030469649 micro F 0.4526465220036503
+Jaccard: 0.4953589953589956
+saving best model ...
+Training Loss for epoch 6: 0.05897632597300942
+Training on epoch=7 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1115945549247013
+Normal: h_loss: 0.0342005967005967 macro F 0.41504717579779976 micro F 0.5501586996248917 micro P 0.6185789985941387 micro R 0.4953667619295055
+Multi only: h_loss: 0.05846738940374191 macro F 0.3716852197019006 micro F 0.47019211725094073
+Jaccard: 0.4934684684684684
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11199525811455467
+Normal: h_loss: 0.034284690534690535 macro F 0.4169695959529278 micro F 0.5501990694104667 micro P 0.6166666666666667 micro R 0.4966658006408591
+Multi only: h_loss: 0.05894824269977269 macro F 0.3786256162233846 micro F 0.4714873603762493
+Jaccard: 0.49586575211575223
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10893906242870874
+Normal: h_loss: 0.03378012753012753 macro F 0.4373970690930186 micro F 0.5586394687813501 micro P 0.6229490730875772 micro R 0.5063652896856327
+Multi only: h_loss: 0.05776796642769715 macro F 0.40582914848612 micro F 0.4834864178229431
+Jaccard: 0.5024433524433523
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11114920404824344
+Normal: h_loss: 0.03398122148122148 macro F 0.43387626697801335 micro F 0.555566182096404 micro P 0.6202883075280299 micro R 0.5030743916168702
+Multi only: h_loss: 0.0586203881797517 macro F 0.39254290503794287 micro F 0.4734982332155477
+Jaccard: 0.504403835653836
+saving best model ...
+Training Loss for epoch 7: 0.04758263714981504
+Training on epoch=8 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12300921707466721
+Normal: h_loss: 0.03553878553878554 macro F 0.4322686850873037 micro F 0.5454120288092789 micro P 0.5928825622775801 micro R 0.5049796483935222
+Multi only: h_loss: 0.05794282217170834 macro F 0.4073346029145095 micro F 0.48832271762208074
+Jaccard: 0.4950126262626264
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.127866683376802
+Normal: h_loss: 0.03428834678834679 macro F 0.4207453152098191 micro F 0.554996678371453 micro P 0.6138343654875617 micro R 0.5064518922663895
+Multi only: h_loss: 0.05796467913970974 macro F 0.39247169464361015 micro F 0.4870406189555126
+Jaccard: 0.5040557603057599
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12556336345997723
+Normal: h_loss: 0.0346503159003159 macro F 0.4299332037564139 micro F 0.5591887994790457 micro P 0.6039991961414791 micro R 0.5205681129297653
+Multi only: h_loss: 0.05833624759573352 macro F 0.39293943688634403 micro F 0.484051807461821
+Jaccard: 0.5100429975429978
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12360111532471983
+Normal: h_loss: 0.035096378846378846 macro F 0.4367315390732426 micro F 0.5501241974035713 micro P 0.5994892747701737 micro R 0.5082705464622845
+Multi only: h_loss: 0.057177828291659384 macro F 0.4206535048020314 micro F 0.4969230769230769
+Jaccard: 0.4977665165165166
+patience 1 not best model , ignoring ...
+Training Loss for epoch 8: 0.03734059352666106
+Training on epoch=9 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.13875438196067436
+Normal: h_loss: 0.035553410553410554 macro F 0.43046267746437167 micro F 0.5467089315681521 micro P 0.5920242301867743 micro R 0.5078375335585
+Multi only: h_loss: 0.05827067669172932 macro F 0.40418596187235484 micro F 0.4861218195836546
+Jaccard: 0.49858722358722385
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1471004660358007
+Normal: h_loss: 0.036887943137943136 macro F 0.4287383408580353 micro F 0.5385354251475095 micro P 0.5706669251647926 micro R 0.5098293929159089
+Multi only: h_loss: 0.059319811155796466 macro F 0.40890147461424825 micro F 0.4877312193280483
+Jaccard: 0.490924447174447
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.14326204249694835
+Normal: h_loss: 0.0360543173043173 macro F 0.4350374540351307 micro F 0.542985586504148 micro P 0.5840478564307079 micro R 0.5073179180739587
+Multi only: h_loss: 0.05956023780381185 macro F 0.41690701215213677 micro F 0.4754571703561116
+Jaccard: 0.49742185367185365
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.13611309911314334
+Normal: h_loss: 0.035257254007254005 macro F 0.4276282871231251 micro F 0.5521757302744624 micro P 0.595333466853595 micro R 0.5148523425998095
+Multi only: h_loss: 0.05859853121175031 macro F 0.3966133197519481 micro F 0.4837280955131908
+Jaccard: 0.5064342751842752
+patience 5 not best model , ignoring ...
+Training Loss for epoch 9: 0.02904117607885463
+Training on epoch=10 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.16123363844299785
+Normal: h_loss: 0.03620787995787996 macro F 0.4236202663472962 micro F 0.5417187283076496 micro P 0.5816935002981515 micro R 0.506884905170174
+Multi only: h_loss: 0.058117677915719534 macro F 0.4066566952916137 micro F 0.49265407365006686
+Jaccard: 0.49319034944034945
+patience 6 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15655651608028928
+Normal: h_loss: 0.03531209781209781 macro F 0.442449012237403 micro F 0.5555862322841892 micro P 0.5927344133529701 micro R 0.5228197800294448
+Multi only: h_loss: 0.05855481727574751 macro F 0.4300937899879677 micro F 0.49213270142180093
+Jaccard: 0.5114182364182362
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1583676922160226
+Normal: h_loss: 0.03650769275769276 macro F 0.4349109411728903 micro F 0.5473502878643637 micro P 0.5742960426179604 micro R 0.5228197800294448
+Multi only: h_loss: 0.0586203881797517 macro F 0.4202688324521381 micro F 0.4983164983164983
+Jaccard: 0.5020014332514333
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15439213684208564
+Normal: h_loss: 0.037206037206037205 macro F 0.44139136302807586 micro F 0.5484558040468582 micro P 0.5623805623805623 micro R 0.5352039490776825
+Multi only: h_loss: 0.057920965203706945 macro F 0.44523222454425254 micro F 0.5160701241782323
+Jaccard: 0.5023460960960964
+patience 2 not best model , ignoring ...
+Training Loss for epoch 10: 0.022836073456873506
+Training on epoch=11 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.17171580844194942
+Normal: h_loss: 0.03648941148941149 macro F 0.4357983249141621 micro F 0.5485388582285353 micro P 0.574202102471825 micro R 0.5250714471291245
+Multi only: h_loss: 0.05881710089176429 macro F 0.417118291082544 micro F 0.49521665728756326
+Jaccard: 0.5049088861588862
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1632160723795176
+Normal: h_loss: 0.03579837954837955 macro F 0.43032320947602937 micro F 0.5485313782450316 micro P 0.5865877712031559 micro R 0.5151121503420802
+Multi only: h_loss: 0.05765868158769016 macro F 0.41464096842503445 micro F 0.4967569629912248
+Jaccard: 0.49978501228501226
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1701659741433891
+Normal: h_loss: 0.03622616122616123 macro F 0.4292406146196175 micro F 0.5435363493964803 micro P 0.5806673885224923 micro R 0.5108686238849918
+Multi only: h_loss: 0.058379961531736316 macro F 0.4136877618241016 micro F 0.4924947748432453
+Jaccard: 0.4970720720720723
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.16245262797107274
+Normal: h_loss: 0.035674066924066924 macro F 0.43422125205827566 micro F 0.5509274174989645 micro P 0.5879174852652259 micro R 0.5183164458300857
+Multi only: h_loss: 0.058664102115754506 macro F 0.41466297639053357 micro F 0.48992778411250476
+Jaccard: 0.5040233415233417
+patience 6 not best model , ignoring ...
+Training Loss for epoch 11: 0.01879298548508114
+Training on epoch=12 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.18565877408008905
+Normal: h_loss: 0.03601044226044226 macro F 0.43052876064762385 micro F 0.5588353863381859 micro P 0.5787715717201707 micro R 0.5402268987615831
+Multi only: h_loss: 0.05892638573177129 macro F 0.4056729863762242 micro F 0.498138495904691
+Jaccard: 0.5194836882336881
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.17816992294436884
+Normal: h_loss: 0.036672224172224176 macro F 0.43511231116569143 micro F 0.543343653250774 micro P 0.5728136699625612 micro R 0.5167575993764614
+Multi only: h_loss: 0.060915369819898584 macro F 0.4019561591350956 micro F 0.4700513405590416
+Jaccard: 0.5008855446355445
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.17385148987430318
+Normal: h_loss: 0.036036036036036036 macro F 0.4355716171653037 micro F 0.5483043079743355 micro P 0.5823031246958046 micro R 0.518056638087815
+Multi only: h_loss: 0.05892638573177129 macro F 0.4067873221534092 micro F 0.4841178721775736
+Jaccard: 0.5034227409227409
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.17288778462339677
+Normal: h_loss: 0.036354130104130106 macro F 0.428500616035966 micro F 0.5417338802599437 micro P 0.5790147783251232 micro R 0.5089633671083398
+Multi only: h_loss: 0.05820510578772513 macro F 0.40223015267526036 micro F 0.49091951825654756
+Jaccard: 0.49221437346437336
+patience 3 not best model , ignoring ...
+Training Loss for epoch 12: 0.015735058274985524
+Training on epoch=13 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1860189653145886
+Normal: h_loss: 0.03568869193869194 macro F 0.4430351600488883 micro F 0.5483318680301699 micro P 0.5887321144674086 micro R 0.5131202909846714
+Multi only: h_loss: 0.05735268403567057 macro F 0.4205064226346322 micro F 0.499236641221374
+Jaccard: 0.49820672945672967
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.18580054522878708
+Normal: h_loss: 0.03618959868959869 macro F 0.4186059414295519 micro F 0.5417592592592593 micro P 0.5820153188103053 micro R 0.5067117000086603
+Multi only: h_loss: 0.059778807483825844 macro F 0.38949883068709956 micro F 0.47434172592734963
+Jaccard: 0.4939308626808629
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1919196614542523
+Normal: h_loss: 0.03628466128466128 macro F 0.43326351171715105 micro F 0.5473866642342424 micro P 0.5781867231910589 micro R 0.5197020871221962
+Multi only: h_loss: 0.06004109109984263 macro F 0.4081034134890516 micro F 0.4808164808164808
+Jaccard: 0.5040472290472292
+patience 6 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1861792296464086
+Normal: h_loss: 0.03586784836784837 macro F 0.4268572632091823 micro F 0.5496281333210907 micro P 0.5848558866634098 micro R 0.5184030484108426
+Multi only: h_loss: 0.059909949291834234 macro F 0.39737042667040184 micro F 0.4770082045411181
+Jaccard: 0.506284125034125
+patience 7 not best model , ignoring ...
+Training Loss for epoch 13: 0.012816815152367649
+Training on epoch=14 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.19946232657760601
+Normal: h_loss: 0.036354130104130106 macro F 0.4234464562484838 micro F 0.5498664493639368 micro P 0.5760766457977613 micro R 0.5259374729366935
+Multi only: h_loss: 0.06041265955586641 macro F 0.3986289700407509 micro F 0.4814258911819887
+Jaccard: 0.5066014878514875
+patience 8 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.20371226113317054
+Normal: h_loss: 0.035761817011817014 macro F 0.42119769968826365 micro F 0.5429652819961684 micro P 0.5896082809011569 micro R 0.503160994197627
+Multi only: h_loss: 0.06017223290785102 macro F 0.3893615742730054 micro F 0.46925004819741667
+Jaccard: 0.4969611657111659
+patience 9 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.19934732622537918
+Normal: h_loss: 0.038112788112788114 macro F 0.4291342491859145 micro F 0.5365463275831408 micro P 0.551301964367291 micro R 0.5225599722871742
+Multi only: h_loss: 0.05982252141982864 macro F 0.4078023429346916 micro F 0.4898415657036347
+Jaccard: 0.493383155883156
+patience 10 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.19441417873784425
+Normal: h_loss: 0.03671609921609922 macro F 0.4279409410737659 micro F 0.5441256582531324 micro P 0.5717965842953917 micro R 0.519009266476141
+Multi only: h_loss: 0.05969137961182025 macro F 0.4017629402782798 micro F 0.4873287028346161
+Jaccard: 0.4992270679770677
+patience 11 not best model , ignoring ...
+Training Loss for epoch 14: 0.011655988634926423
+Training on epoch=15 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.20216171846196457
+Normal: h_loss: 0.03732303732303732 macro F 0.4238170331745094 micro F 0.5294551488890937 micro P 0.5659800926382182 micro R 0.4973586212869143
+Multi only: h_loss: 0.0605656583318762 macro F 0.40175669890587784 micro F 0.47249190938511326
+Jaccard: 0.48219185094185113
+patience 12 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.19607731835408646
+Normal: h_loss: 0.035674066924066924 macro F 0.435661655183032 micro F 0.5465024401580293 micro P 0.5897873194221509 micro R 0.5091365722698536
+Multi only: h_loss: 0.05940723902780206 macro F 0.4096603698231161 micro F 0.4814956123616941
+Jaccard: 0.4981453043953046
+overfitting, loading best model ...
+Training Loss for epoch 15: 0.004888709080154275
+Testing:
+NOTE, this is on the test set
+Normal: h_loss: 0.03599068151306957 macro F 0.43386071967958806 micro F 0.555185034566897
+Multi only: h_loss: 0.05943847072879331 macro F 0.3882191126529841 micro F 0.49030369557263087
+Jaccard: 0.515711565628647
+STARTING Fold ----------- 2
+Training on epoch=1 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.13787664361378182
+Normal: h_loss: 0.038848015913645076 macro F 0.051216144785322125 micro F 0.30941237649505976 micro P 0.609007164790174 micro R 0.20738933426280934
+Multi only: h_loss: 0.07304676816482815 macro F 0.04607590492574518 micro F 0.14692573862124036
+Jaccard: 0.2293095798778198
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11797264621105703
+Normal: h_loss: 0.036891719931547926 macro F 0.13057185911096258 micro F 0.4556197053903847 micro P 0.5982712200651835 micro R 0.3678982223771349
+Multi only: h_loss: 0.06867079952593673 macro F 0.11634266229852643 micro F 0.2968494749124854
+Jaccard: 0.38580594518958444
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10485938400277293
+Normal: h_loss: 0.03430282730477263 macro F 0.1497091931261217 micro F 0.3895360187414589 micro P 0.7692109997429967 micro R 0.26080515859184383
+Multi only: h_loss: 0.06329200474063269 macro F 0.14252273228363407 micro F 0.3041844149336006
+Jaccard: 0.27119381591071984
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09995160262611782
+Normal: h_loss: 0.03344717635185537 macro F 0.21099942855209572 micro F 0.4881651838173578 micro P 0.6820953870211103 micro R 0.38009759498082957
+Multi only: h_loss: 0.061856140030996445 macro F 0.2038080620214071 micro F 0.38569488456315076
+Jaccard: 0.3919303095457499
+saving best model ...
+Training Loss for epoch 1: 0.12394448921235822
+Training on epoch=2 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09713587341321897
+Normal: h_loss: 0.03295353157132619 macro F 0.27638224885063806 micro F 0.5074871570663461 micro P 0.6805922017003811 micro R 0.40458347856395954
+Multi only: h_loss: 0.059759321724860974 macro F 0.26122874821576353 micro F 0.42398945518453424
+Jaccard: 0.4106685778642374
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09352724864930936
+Normal: h_loss: 0.03238309760271468 macro F 0.24918314512591375 micro F 0.5074527252502781 micro P 0.7014145141451414 micro R 0.39752527012896477
+Multi only: h_loss: 0.06026073479806728 macro F 0.21915301086309577 micro F 0.3960712654179991
+Jaccard: 0.4153100576772128
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09205781633181766
+Normal: h_loss: 0.03236115783469116 macro F 0.26611586675522975 micro F 0.5011273957158963 micro P 0.709610472541507 micro R 0.3873300801673057
+Multi only: h_loss: 0.059759321724860974 macro F 0.23584869737702086 micro F 0.4005486968449931
+Jaccard: 0.3995170813282828
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09092567632993388
+Normal: h_loss: 0.03222586259854612 macro F 0.30667443012181334 micro F 0.536279926335175 micro P 0.676849515207863 micro R 0.44405716277448587
+Multi only: h_loss: 0.05928070015498222 macro F 0.27308005028545695 micro F 0.4236649678705961
+Jaccard: 0.4577659465547253
+saving best model ...
+Training Loss for epoch 2: 0.094382879760753
+Training on epoch=3 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09215166603815865
+Normal: h_loss: 0.032094223990405006 macro F 0.3237536037365326 micro F 0.5096921959667058 micro P 0.7100389105058366 micro R 0.39752527012896477
+Multi only: h_loss: 0.05880207858510347 macro F 0.27598308934329213 micro F 0.4125683060109289
+Jaccard: 0.41101839527661205
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09436017796557404
+Normal: h_loss: 0.03274876040310667 macro F 0.2390140876054627 micro F 0.4662057456192633 micro P 0.7376461712561297 micro R 0.3407981875217846
+Multi only: h_loss: 0.062266387090892515 macro F 0.20710444851498427 micro F 0.34041525832930947
+Jaccard: 0.36060202723456564
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.0889143444802923
+Normal: h_loss: 0.03177244072606006 macro F 0.28688627542966944 micro F 0.5194934468838135 micro P 0.710912668382019 micro R 0.40928895085395606
+Multi only: h_loss: 0.060397483818032636 macro F 0.2532822594600471 micro F 0.3927589367552704
+Jaccard: 0.4282533019350879
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08611850768901362
+Normal: h_loss: 0.031059398265295676 macro F 0.34758967643236643 micro F 0.5472764097644174 micro P 0.7046390337633819 micro R 0.4473684210526316
+Multi only: h_loss: 0.05768529492205306 macro F 0.3023841409090068 micro F 0.4433692544534858
+Jaccard: 0.46262072966792944
+saving best model ...
+Training Loss for epoch 3: 0.08610721430886305
+Training on epoch=4 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.0881493625436003
+Normal: h_loss: 0.03206131433836973 macro F 0.36619747207907016 micro F 0.5533822330888345 micro P 0.6660127513487003 micro R 0.47333565702335306
+Multi only: h_loss: 0.058733704075120796 macro F 0.31901477912238524 micro F 0.44425274962260086
+Jaccard: 0.483186580662776
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08788197411690908
+Normal: h_loss: 0.03128610920153871 macro F 0.37039826157983546 micro F 0.5550702028081123 micro P 0.6882899148826412 micro R 0.46505751132798884
+Multi only: h_loss: 0.05759412890874282 macro F 0.31836252169198237 micro F 0.45267489711934156
+Jaccard: 0.47584382785570467
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08663278913560782
+Normal: h_loss: 0.031457970717722945 macro F 0.4125164588421332 micro F 0.5488015943777206 micro P 0.6892372546436569 micro R 0.45590798187521786
+Multi only: h_loss: 0.0565913027623302 macro F 0.3624426297685566 micro F 0.46567678071874324
+Jaccard: 0.4646718542029284
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08634760284940723
+Normal: h_loss: 0.03164445874592286 macro F 0.39482372793739096 micro F 0.5596376959088134 micro P 0.672578277886497 micro R 0.4791739281979784
+Multi only: h_loss: 0.05795879296198377 macro F 0.33872115908385914 micro F 0.4508745411358238
+Jaccard: 0.49006347906214787
+saving best model ...
+Training Loss for epoch 4: 0.0790199013333217
+Training on epoch=5 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08798375957418247
+Normal: h_loss: 0.03182363351811494 macro F 0.4094476675820781 micro F 0.5607872823618472 micro P 0.6662669384818324 micro R 0.48414081561519695
+Multi only: h_loss: 0.0557480171392105 macro F 0.35533224920789763 micro F 0.4841838886545762
+Jaccard: 0.48395105969079555
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.0883280202056791
+Normal: h_loss: 0.03187116968216589 macro F 0.40318589197231663 micro F 0.5548064153641843 micro P 0.670328313996544 micro R 0.4732485186476124
+Multi only: h_loss: 0.057343422372139664 macro F 0.3488563618424937 micro F 0.4600858369098713
+Jaccard: 0.48238114740111226
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08995335670101297
+Normal: h_loss: 0.031388494785648466 macro F 0.39161680118200065 micro F 0.560920716112532 micro P 0.6790933861778549 micro R 0.4777797141861276
+Multi only: h_loss: 0.056089889689123894 macro F 0.3391263952373433 micro F 0.47893288164302344
+Jaccard: 0.4831388007235249
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08852358279802959
+Normal: h_loss: 0.031856543170150214 macro F 0.4126495872845189 micro F 0.5494880546075086 micro P 0.6757822437038922 micro R 0.46296619031021263
+Multi only: h_loss: 0.05875649557844836 macro F 0.35550456133828084 micro F 0.4383442265795207
+Jaccard: 0.4747875499129722
+patience 4 not best model , ignoring ...
+Training Loss for epoch 5: 0.0721312946838024
+Training on epoch=6 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09347699393165555
+Normal: h_loss: 0.03208325410639325 macro F 0.4398915109135518 micro F 0.5548000811853055 micro P 0.6641156462585034 micro R 0.4763855001742768
+Multi only: h_loss: 0.055588476615917586 macro F 0.3932704640869667 micro F 0.4877126654064272
+Jaccard: 0.47674140814306676
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09331149651149381
+Normal: h_loss: 0.03162983223390718 macro F 0.415442194386498 micro F 0.5534792483997523 micro P 0.6789513677811551 micro R 0.4671488323457651
+Multi only: h_loss: 0.05727504786215699 macro F 0.354883894002566 micro F 0.4582884242293597
+Jaccard: 0.4793607726698746
+patience 6 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09236279908528382
+Normal: h_loss: 0.03232824818265588 macro F 0.42498965097501984 micro F 0.5621750111424751 micro P 0.6511414477457841 micro R 0.4945974207040781
+Multi only: h_loss: 0.055998723675813655 macro F 0.39568058484815566 micro F 0.490566037735849
+Jaccard: 0.49636872461690734
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09307751500296522
+Normal: h_loss: 0.032562272374906755 macro F 0.4419556478915215 micro F 0.5500934673874602 micro P 0.6545629433690032 micro R 0.4743813175322412
+Multi only: h_loss: 0.05618105570243413 macro F 0.39490295734412223 micro F 0.4811618606609134
+Jaccard: 0.47399235520971994
+patience 1 not best model , ignoring ...
+Training Loss for epoch 6: 0.06300713884741684
+Training on epoch=7 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.101217199529256
+Normal: h_loss: 0.03281092307917331 macro F 0.42750676377506464 micro F 0.5586542718016823 micro P 0.6413325804630152 micro R 0.4948588358313001
+Multi only: h_loss: 0.05665967727231288 macro F 0.3918430746925557 micro F 0.48530020703933746
+Jaccard: 0.49140131736118225
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1034732171351204
+Normal: h_loss: 0.03359344147201217 macro F 0.4306560186001738 micro F 0.5603675168684501 micro P 0.6214839189045749 micro R 0.5101951899616591
+Multi only: h_loss: 0.0575485459020877 macro F 0.38236028072215916 micro F 0.4807731852765783
+Jaccard: 0.5068854305313808
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1016845199503283
+Normal: h_loss: 0.033633664380055286 macro F 0.45285760727655056 micro F 0.544382801664355 micro P 0.6307392102846648 micro R 0.4788253746950157
+Multi only: h_loss: 0.05661409426565776 macro F 0.41521355889734685 micro F 0.48185231539424284
+Jaccard: 0.4800774717586429
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10270624311670037
+Normal: h_loss: 0.03357150170398865 macro F 0.4408759148586476 micro F 0.5519933635875665 micro P 0.6272596207164245 micro R 0.4928546531892645
+Multi only: h_loss: 0.05711550733886407 macro F 0.3898435150095697 micro F 0.48478618421052627
+Jaccard: 0.49056346199788353
+patience 2 not best model , ignoring ...
+Training Loss for epoch 7: 0.05206805234022862
+Training on epoch=8 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11868689406033461
+Normal: h_loss: 0.03438692974886279 macro F 0.42951484557939573 micro F 0.5527867605097965 micro P 0.6084589614740369 micro R 0.50644823980481
+Multi only: h_loss: 0.05848299753851764 macro F 0.3862590647629184 micro F 0.4761126990608412
+Jaccard: 0.5026961537148902
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1175077047091833
+Normal: h_loss: 0.03447468882095687 macro F 0.4229254735403452 micro F 0.5499761336515513 micro P 0.6080852860460206 micro R 0.5020041826420355
+Multi only: h_loss: 0.05782204394201842 macro F 0.37650890665999176 micro F 0.47744593202883623
+Jaccard: 0.49546090577113383
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12012817224027483
+Normal: h_loss: 0.03625546665886586 macro F 0.4486200528398365 micro F 0.5322009907997168 micro P 0.5803066159069863 micro R 0.4914604391774137
+Multi only: h_loss: 0.056842009298933356 macro F 0.41964969980185673 micro F 0.5017978425888933
+Jaccard: 0.4737466298078564
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11361181361060481
+Normal: h_loss: 0.03377992950021209 macro F 0.44308928951857157 micro F 0.5566753047317401 micro P 0.619525742362743 micro R 0.5054025792959219
+Multi only: h_loss: 0.05675084328562312 macro F 0.398197401428526 micro F 0.48891625615763545
+Jaccard: 0.4992150438551584
+patience 6 not best model , ignoring ...
+Training Loss for epoch 8: 0.041120350672002516
+Training on epoch=9 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.13202470603400027
+Normal: h_loss: 0.034617297313109745 macro F 0.430477065526023 micro F 0.5458819014726339 micro P 0.6071924020915591 micro R 0.49581735796444754
+Multi only: h_loss: 0.05825508250524204 macro F 0.3869640781673595 micro F 0.4714640198511166
+Jaccard: 0.49176649261117367
+patience 7 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1296695014094762
+Normal: h_loss: 0.0370343284237008 macro F 0.4634223484809639 micro F 0.5416364952932659 micro P 0.5634651600753295 micro R 0.5214360404322064
+Multi only: h_loss: 0.05645455374236485 macro F 0.45881371222610295 micro F 0.5211676010052194
+Jaccard: 0.48834510767550554
+patience 8 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.13138669997902236
+Normal: h_loss: 0.03514750837367813 macro F 0.46003847881125987 micro F 0.5568056067871634 micro P 0.5912651782217 micro R 0.5261415127222029
+Multi only: h_loss: 0.05602151517914122 macro F 0.4431672436994115 micro F 0.5151873767258384
+Jaccard: 0.508173782464762
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.13270163364587134
+Normal: h_loss: 0.03520967104974477 macro F 0.4498904128509616 micro F 0.5381996067334901 micro P 0.5985066666666666 micro R 0.4889334262809341
+Multi only: h_loss: 0.0574345883854499 macro F 0.4042117882135209 micro F 0.48550428746427116
+Jaccard: 0.4799699668953277
+patience 1 not best model , ignoring ...
+Training Loss for epoch 9: 0.03185728550631983
+Training on epoch=10 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.14142033700489198
+Normal: h_loss: 0.03581301467039155 macro F 0.43949100741910285 micro F 0.5515978390257302 micro P 0.5811306193324329 micro R 0.5249215754618334
+Multi only: h_loss: 0.0574345883854499 macro F 0.4118335017184397 micro F 0.4990059642147117
+Jaccard: 0.5052677383024463
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1472673756910027
+Normal: h_loss: 0.03566674955023476 macro F 0.4422645569622378 micro F 0.5392101284958428 micro P 0.5888361535286835 micro R 0.49729871035203904
+Multi only: h_loss: 0.058300665511897165 macro F 0.4071742532615722 micro F 0.4832323232323231
+Jaccard: 0.48782464762294797
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.14505984435443248
+Normal: h_loss: 0.03590443037048955 macro F 0.43433716598021527 micro F 0.5423017759753881 micro P 0.5830409942868597 micro R 0.5068839316835134
+Multi only: h_loss: 0.059554198194912936 macro F 0.4030648028925283 micro F 0.4745626382465312
+Jaccard: 0.4958789802395817
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1464836318383408
+Normal: h_loss: 0.03542541210197604 macro F 0.440999812051603 micro F 0.545377756921633 micro P 0.5909090909090909 micro R 0.5063611014290693
+Multi only: h_loss: 0.059143951135016866 macro F 0.4001901726088405 micro F 0.4779722389861195
+Jaccard: 0.4968345790246064
+patience 5 not best model , ignoring ...
+Training Loss for epoch 10: 0.024694354145250185
+Training on epoch=11 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15990017897472222
+Normal: h_loss: 0.03553145431408972 macro F 0.4559075925592689 micro F 0.5546950185601027 micro P 0.585016916384727 micro R 0.5273614499825723
+Multi only: h_loss: 0.05615826419910657 macro F 0.43498037172024223 micro F 0.5176194205168363
+Jaccard: 0.5061124193713522
+patience 6 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.16424635212112867
+Normal: h_loss: 0.035472948266027 macro F 0.4449139753541081 micro F 0.5478021721903698 micro P 0.5889545955698106 micro R 0.5120250958522133
+Multi only: h_loss: 0.05848299753851764 macro F 0.4164015360088397 micro F 0.4880287310454908
+Jaccard: 0.49957339339954265
+patience 7 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15975687228005142
+Normal: h_loss: 0.03628471968289722 macro F 0.4653493415928193 micro F 0.5442101878645905 micro P 0.5754249635745508 micro R 0.5162077378877657
+Multi only: h_loss: 0.05720667335217431 macro F 0.4560259724829091 micro F 0.504930966469428
+Jaccard: 0.4937886078973412
+patience 8 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15820564166072984
+Normal: h_loss: 0.038720033933507876 macro F 0.454290534928857 micro F 0.5307750254796827 micro P 0.5399873771526463 micro R 0.5218717323109098
+Multi only: h_loss: 0.05950861518825782 macro F 0.44333977355422516 micro F 0.49720777970344693
+Jaccard: 0.4861079826627075
+patience 9 not best model , ignoring ...
+Training Loss for epoch 11: 0.019427298683922106
+Training on epoch=12 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.16422907566418848
+Normal: h_loss: 0.036109201538709064 macro F 0.4419282200757187 micro F 0.5387884732147028 micro P 0.5805737292400603 micro R 0.5026141512722203
+Multi only: h_loss: 0.05875649557844836 macro F 0.4001936235250101 micro F 0.48024193548387095
+Jaccard: 0.48657042421760344
+patience 10 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.17383850598769776
+Normal: h_loss: 0.03574353873831707 macro F 0.4466910270928753 micro F 0.546382662768574 micro P 0.5844336344683808 micro R 0.5129836179853607
+Multi only: h_loss: 0.05834624851855228 macro F 0.42272815425687255 micro F 0.4900398406374502
+Jaccard: 0.49812634381079124
+patience 11 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.17527303079035797
+Normal: h_loss: 0.03601412921060715 macro F 0.4482014418810208 micro F 0.5545253064362929 micro P 0.5765071005360669 micro R 0.5341582432903451
+Multi only: h_loss: 0.05816391649193181 macro F 0.42591731447573267 micro F 0.5071456160679799
+Jaccard: 0.5087027746493292
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1716035381226502
+Normal: h_loss: 0.03628837631090114 macro F 0.45136598586782234 micro F 0.5453962437013284 micro P 0.574946880432683 micro R 0.5187347507842454
+Multi only: h_loss: 0.05950861518825782 macro F 0.4200369942655472 micro F 0.4847049536214723
+Jaccard: 0.5008190846728775
+patience 1 not best model , ignoring ...
+Training Loss for epoch 12: 0.016385965612556185
+Training on epoch=13 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.17797671814096416
+Normal: h_loss: 0.03544735186999956 macro F 0.45086455871873293 micro F 0.5526534379326258 micro P 0.5874043555032372 micro R 0.5217845939351691
+Multi only: h_loss: 0.056819217795605795 macro F 0.4163282591174461 micro F 0.5070199723156021
+Jaccard: 0.502286611378451
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.17594215094591587
+Normal: h_loss: 0.03705626819172432 macro F 0.4439814597681066 micro F 0.543431248873671 micro P 0.5625932835820896 micro R 0.5255315440920181
+Multi only: h_loss: 0.05909836812836175 macro F 0.4260431159455691 micro F 0.4960155490767736
+Jaccard: 0.49793010477458066
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.17506722514102338
+Normal: h_loss: 0.03771080460442598 macro F 0.4392031653053179 micro F 0.5363068207364777 micro P 0.5540176497909893 micro R 0.5196932729173929
+Multi only: h_loss: 0.058596955055155435 macro F 0.4171832496924563 micro F 0.5002915451895044
+Jaccard: 0.4889952561346028
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1809332769108951
+Normal: h_loss: 0.03673082829937545 macro F 0.44750017220242494 micro F 0.5463167878596269 micro P 0.5670886075949367 micro R 0.5270128964796096
+Multi only: h_loss: 0.0594630321816027 macro F 0.41887775160918655 micro F 0.48973205554469
+Jaccard: 0.5051056277942729
+patience 5 not best model , ignoring ...
+Training Loss for epoch 13: 0.013852626059965532
+Training on epoch=14 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.18923958999157148
+Normal: h_loss: 0.03634322573095994 macro F 0.4430213319994821 micro F 0.5336211346253109 micro P 0.5781392984239959 micro R 0.49546880446148484
+Multi only: h_loss: 0.05793600145865621 macro F 0.41396437351321475 micro F 0.4897631473303894
+Jaccard: 0.4812805023719327
+patience 6 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.18943341615086046
+Normal: h_loss: 0.03625546665886586 macro F 0.44814930151389376 micro F 0.5525116216094237 micro P 0.5730736822394907 micro R 0.533373997908679
+Multi only: h_loss: 0.05959978120156806 macro F 0.4202314128471815 micro F 0.4869531096723563
+Jaccard: 0.5112794785160913
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.19316992460857507
+Normal: h_loss: 0.036573593295206895 macro F 0.44324971218641424 micro F 0.5451982539105129 micro P 0.5700836820083682 micro R 0.5223945625653538
+Multi only: h_loss: 0.06003281976479168 macro F 0.4184496103475362 micro F 0.48190401258851295
+Jaccard: 0.5031517695641786
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1916747749129447
+Normal: h_loss: 0.03587517734645819 macro F 0.4479906486102167 micro F 0.5527647353785842 micro P 0.5795813019787783 micro R 0.5283199721157198
+Multi only: h_loss: 0.0585057890418452 macro F 0.4160313614459131 micro F 0.4949832775919733
+Jaccard: 0.5119620490768234
+saving best model ...
+Training Loss for epoch 14: 0.012766249424275733
+Training on epoch=15 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.19531963664469656
+Normal: h_loss: 0.03632128596293642 macro F 0.44096340490957264 micro F 0.5457538757031143 micro P 0.574246944471177 micro R 0.5199546880446149
+Multi only: h_loss: 0.05784483544534597 macro F 0.42098556296408146 micro F 0.49861714737258
+Jaccard: 0.5000938534521006
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.19424372654836547
+Normal: h_loss: 0.036533370387163776 macro F 0.45037076187635783 micro F 0.5446424502073745 micro P 0.5709507883420927 micro R 0.5206517950505403
+Multi only: h_loss: 0.05916674263834443 macro F 0.42465515614183635 micro F 0.4889763779527559
+Jaccard: 0.5009641309170331
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.18678147087715244
+Normal: h_loss: 0.03681127411546169 macro F 0.45164353113554495 micro F 0.5421385364078775 micro P 0.567025021406146 micro R 0.5193447194144302
+Multi only: h_loss: 0.05916674263834443 macro F 0.4225702449242902 micro F 0.4909803921568627
+Jaccard: 0.49608375140780114
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.19914869432428836
+Normal: h_loss: 0.03659918969123433 macro F 0.44139624509137626 micro F 0.536770491044569 micro P 0.5724015398282499 micro R 0.5053154409201812
+Multi only: h_loss: 0.05916674263834443 macro F 0.41555273800165354 micro F 0.4818363273453094
+Jaccard: 0.48904815535305945
+patience 4 not best model , ignoring ...
+Training Loss for epoch 15: 0.010686785145875477
+Training on epoch=16 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.20069742694480325
+Normal: h_loss: 0.036237183518846264 macro F 0.4336354889333772 micro F 0.5293503039513677 micro P 0.5817327766179541 micro R 0.4856221680027884
+Multi only: h_loss: 0.05973653022153341 macro F 0.4045906555508378 micro F 0.46954057883019634
+Jaccard: 0.47655370123886576
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.21813926713895296
+Normal: h_loss: 0.03656262341119513 macro F 0.4471621329144953 micro F 0.5481494870983776 micro P 0.5693231953440345 micro R 0.5284942488672011
+Multi only: h_loss: 0.05880207858510347 macro F 0.4198510723316999 micro F 0.49805447470817116
+Jaccard: 0.5029333469847439
+patience 6 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.19601484522447746
+Normal: h_loss: 0.03663941259927745 macro F 0.4530763736763067 micro F 0.5485266288185997 micro P 0.5679231199850718 micro R 0.530411293133496
+Multi only: h_loss: 0.05884766159175859 macro F 0.42046021996712873 micro F 0.5017367811655731
+Jaccard: 0.5030869253609088
+patience 7 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1922011974906438
+Normal: h_loss: 0.035352279541897645 macro F 0.44309070253559557 micro F 0.5393119222338701 micro P 0.5950578338590957 micro R 0.4931160683164866
+Multi only: h_loss: 0.05855137204850032 macro F 0.4176168725637193 micro F 0.4792215690249341
+Jaccard: 0.48448346472816617
+patience 8 not best model , ignoring ...
+Training Loss for epoch 16: 0.010452085740340988
+Training on epoch=17 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.2023307830614017
+Normal: h_loss: 0.036109201538709064 macro F 0.45055781382694954 micro F 0.5417420761984315 micro P 0.5794698699493696 micro R 0.5086266991983269
+Multi only: h_loss: 0.058733704075120796 macro F 0.41423793677962195 micro F 0.48736821165705185
+Jaccard: 0.4920480529674753
+patience 9 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.20543889461226897
+Normal: h_loss: 0.03664306922728137 macro F 0.4507732170619653 micro F 0.5480131703576744 micro P 0.5680224403927069 micro R 0.5293656326246079
+Multi only: h_loss: 0.05793600145865621 macro F 0.4302771467892061 micro F 0.5027386541471048
+Jaccard: 0.5042046346541073
+patience 10 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.20494731698344257
+Normal: h_loss: 0.03606532200266203 macro F 0.4499257891194462 micro F 0.5433584888189268 micro P 0.5796700582831177 micro R 0.5113279888462879
+Multi only: h_loss: 0.05716109034551919 macro F 0.4262850646773164 micro F 0.5090054815974941
+Jaccard: 0.4921760349476127
+patience 11 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.19796533193017782
+Normal: h_loss: 0.03731588878000263 macro F 0.4502902771135092 micro F 0.5328022707503548 micro P 0.5613002797337706 micro R 0.5070582084349947
+Multi only: h_loss: 0.05804995897529401 macro F 0.4432784735495883 micro F 0.5018580089966751
+Jaccard: 0.4816542097539336
+patience 12 not best model , ignoring ...
+Training Loss for epoch 17: 0.009277589713676938
+Training on epoch=18 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.21214825367139087
+Normal: h_loss: 0.03684052713949305 macro F 0.45300451455887814 micro F 0.5421078943780393 micro P 0.5665431746936449 micro R 0.5196932729173929
+Multi only: h_loss: 0.057753669432035734 macro F 0.4412244499938393 micro F 0.506619937694704
+Jaccard: 0.49178355687519143
+overfitting, loading best model ...
+Training Loss for epoch 18: 0.001730547166689317
+Testing:
+NOTE, this is on the test set
+Normal: h_loss: 0.03519439837847798 macro F 0.4679111756647865 micro F 0.5625715687878292
+Multi only: h_loss: 0.059395801331285206 macro F 0.43244561106238305 micro F 0.49344978165938863
+Jaccard: 0.5235089982187835
+STARTING Fold ----------- 3
+Training on epoch=1 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.14969861685613337
+Normal: h_loss: 0.041104155392063656 macro F 0.012130270610446822 micro F 0.12062896033794884 micro P 0.5749440715883669 micro R 0.06738332459360252
+Multi only: h_loss: 0.07489219194421506 macro F 0.007878151260504201 micro F 0.026825633383010434
+Jaccard: 0.07663560970615338
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12278754172500159
+Normal: h_loss: 0.03646023782708537 macro F 0.0967800023750236 micro F 0.362508790998018 micro P 0.6751607525601334 micro R 0.24777136864184582
+Multi only: h_loss: 0.0680108266813469 macro F 0.08866234733696657 micro F 0.23562773910801751
+Jaccard: 0.2631394832940855
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10950811705271224
+Normal: h_loss: 0.03540712896195644 macro F 0.12371650671938306 micro F 0.4203531876683627 micro P 0.667110013300399 micro R 0.30685194895997203
+Multi only: h_loss: 0.06707037342875494 macro F 0.11026124032432223 micro F 0.26347607052896727
+Jaccard: 0.32910139585679676
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1011442360407659
+Normal: h_loss: 0.033695827056121924 macro F 0.2183432661306315 micro F 0.4645243767795921 micro P 0.6930813247789145 micro R 0.3493270407271456
+Multi only: h_loss: 0.06106064776585008 macro F 0.2067722956510262 micro F 0.3718735252477583
+Jaccard: 0.36019248489812644
+saving best model ...
+Training Loss for epoch 1: 0.13014641560642906
+Training on epoch=2 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09662268456104799
+Normal: h_loss: 0.033066887039447705 macro F 0.2144533139394989 micro F 0.4595063056601518 micro P 0.7267914539610513 micro R 0.33595525257822056
+Multi only: h_loss: 0.06220754197632811 macro F 0.19153295228565845 micro F 0.3423860329776916
+Jaccard: 0.35069622197194655
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.0950391808704184
+Normal: h_loss: 0.032255115622577483 macro F 0.2595346092298442 micro F 0.5084972418788656 micro P 0.7014604150653344 micro R 0.39879391714735185
+Multi only: h_loss: 0.060510138544820624 macro F 0.23112825587546065 micro F 0.3885025498377376
+Jaccard: 0.41416163270878154
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09331164268231922
+Normal: h_loss: 0.03341792332782401 macro F 0.25069610311353724 micro F 0.4648984132560455 micro P 0.7042753237537698 micro R 0.3469673134067471
+Multi only: h_loss: 0.06108358565005964 macro F 0.21080919933695683 micro F 0.3615439942459842
+Jaccard: 0.36124193713525166
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09046917397948825
+Normal: h_loss: 0.03235750120668724 macro F 0.3141376732743354 micro F 0.485134112992378 micro P 0.725674499564839 micro R 0.3643593777311659
+Multi only: h_loss: 0.059202679144875675 macro F 0.27093951430222185 micro F 0.3956918754390072
+Jaccard: 0.3753626156103889
+patience 2 not best model , ignoring ...
+Training Loss for epoch 2: 0.09546674197295253
+Training on epoch=3 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09013943447999094
+Normal: h_loss: 0.032551302490894996 macro F 0.3330860939581458 micro F 0.5178726169844021 micro P 0.6808601538023356 micro R 0.4178465303268659
+Multi only: h_loss: 0.05810166070281677 macro F 0.2896338135256302 micro F 0.43269876819708847
+Jaccard: 0.4246783386232553
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08820080164420613
+Normal: h_loss: 0.03152013339378958 macro F 0.3147990882202013 micro F 0.5224905827609129 micro P 0.713464447806354 micro R 0.4121657052962769
+Multi only: h_loss: 0.06096889622901184 macro F 0.2491919963932772 micro F 0.3807082945013979
+Jaccard: 0.43206716494317626
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08744831410995388
+Normal: h_loss: 0.03123125978147991 macro F 0.3626538957768584 micro F 0.5610320193246646 micro P 0.6809731752963194 micro R 0.47701450795315503
+Multi only: h_loss: 0.056518946692357096 macro F 0.3162576934316736 micro F 0.4714714714714715
+Jaccard: 0.48006893962663366
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08820155468911735
+Normal: h_loss: 0.03194064561424037 macro F 0.37739596964594196 micro F 0.5250910672538466 micro P 0.694720184146166 micro R 0.42204160111868555
+Multi only: h_loss: 0.055876685934489405 macro F 0.3278056608996095 micro F 0.45552078676799285
+Jaccard: 0.4254462305040788
+patience 1 not best model , ignoring ...
+Training Loss for epoch 3: 0.08577368965466317
+Training on epoch=4 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08739610085534845
+Normal: h_loss: 0.03155304304582486 macro F 0.3936284400542838 micro F 0.5489991114827785 micro P 0.682876088935119 micro R 0.4590106624715959
+Multi only: h_loss: 0.05713826956601523 macro F 0.35382438050754805 micro F 0.45575704610006557
+Jaccard: 0.4668697314084845
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.087336768117479
+Normal: h_loss: 0.03133730199359359 macro F 0.36573333314850964 micro F 0.5275633958103638 micro P 0.7143923559271425 micro R 0.4181961195595176
+Multi only: h_loss: 0.05803284705018809 macro F 0.3057587863525978 micro F 0.4229014598540146
+Jaccard: 0.43127367666632566
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08829578693589596
+Normal: h_loss: 0.03183094677412277 macro F 0.3823018500408349 micro F 0.5404634957504091 micro P 0.6824423410211972 micro R 0.44738682048592904
+Multi only: h_loss: 0.05798697128176897 macro F 0.32941452666576815 micro F 0.4387211367673179
+Jaccard: 0.457189174430907
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08668547502721821
+Normal: h_loss: 0.03146528397373079 macro F 0.37257681069736465 micro F 0.552405721716515 micro P 0.6822561994089683 micro R 0.4640797063450446
+Multi only: h_loss: 0.057184145334434354 macro F 0.3065994680236473 micro F 0.4493041749502982
+Jaccard: 0.4748216784410089
+patience 5 not best model , ignoring ...
+Training Loss for epoch 4: 0.07902389947460295
+Training on epoch=5 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08833643899178009
+Normal: h_loss: 0.03142140443768374 macro F 0.4067415987743357 micro F 0.5579050264958585 micro P 0.6781738586616636 micro R 0.4738682048592903
+Multi only: h_loss: 0.05667951188182402 macro F 0.3546549159569651 micro F 0.4596544937677673
+Jaccard: 0.4826541756254055
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08891051949242236
+Normal: h_loss: 0.03170296479398558 macro F 0.43168985832932893 micro F 0.5584190689620047 micro P 0.669189453125 micro R 0.4791120433490649
+Multi only: h_loss: 0.055853748050279844 macro F 0.37750308171522473 micro F 0.47237269772481044
+Jaccard: 0.48407904167093263
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08855198144995105
+Normal: h_loss: 0.032152730038467726 macro F 0.43743056044854295 micro F 0.5542657271759518 micro P 0.659867229933615 micro R 0.4778010837266212
+Multi only: h_loss: 0.0557619965134416 macro F 0.36911142482783277 micro F 0.481994459833795
+Jaccard: 0.478388109620832
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08784403460710749
+Normal: h_loss: 0.031538416533809184 macro F 0.4429727247219738 micro F 0.5597468225205452 micro P 0.6728432936556633 micro R 0.47919944065722775
+Multi only: h_loss: 0.05470685383980182 macro F 0.3989292270527874 micro F 0.4915796205499893
+Jaccard: 0.47967646155421356
+patience 2 not best model , ignoring ...
+Training Loss for epoch 5: 0.07155140877573261
+Training on epoch=6 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09467634971369811
+Normal: h_loss: 0.032222205970542206 macro F 0.41356100062902906 micro F 0.5529626623376623 micro P 0.6590084643288996 micro R 0.47631532948785177
+Multi only: h_loss: 0.05697770437654831 macro F 0.3696421624970526 micro F 0.4630350194552529
+Jaccard: 0.4803658578205523
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09210665447722685
+Normal: h_loss: 0.03290233877927131 macro F 0.41575970457956596 micro F 0.5528277507206043 micro P 0.6407834101382488 micro R 0.48610382800209756
+Multi only: h_loss: 0.05578493439765116 macro F 0.3800356651116935 micro F 0.48626953950147866
+Jaccard: 0.483157571413945
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09387849937783814
+Normal: h_loss: 0.03285845924322427 macro F 0.41717592220849237 micro F 0.5436262061960386 micro P 0.6488845780795345 micro R 0.46775039328788676
+Multi only: h_loss: 0.05635838150289017 macro F 0.36891677037932497 micro F 0.47218045112781953
+Jaccard: 0.4701204737039695
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09137124419166572
+Normal: h_loss: 0.03191139259020901 macro F 0.4222565568954085 micro F 0.555764825655383 micro P 0.6654882360112154 micro R 0.47710190526131796
+Multi only: h_loss: 0.05599137535553721 macro F 0.3877782655429503 micro F 0.4789754535752401
+Jaccard: 0.4827224326814785
+patience 6 not best model , ignoring ...
+Training Loss for epoch 6: 0.062362698121690756
+Training on epoch=7 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10814030387908834
+Normal: h_loss: 0.035593616990156354 macro F 0.4334736840150309 micro F 0.5367409099562155 micro P 0.5892371995820271 micro R 0.4928334207306415
+Multi only: h_loss: 0.05578493439765116 macro F 0.4111697008561266 micro F 0.5104669887278583
+Jaccard: 0.472401965803215
+patience 7 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10399279738169458
+Normal: h_loss: 0.0329937544793693 macro F 0.41182329882033164 micro F 0.5562822719449226 micro P 0.6360058472956258 micro R 0.49431917496941097
+Multi only: h_loss: 0.057298834755482156 macro F 0.3843809853212442 micro F 0.473662031184155
+Jaccard: 0.4976621958294941
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10330208865737822
+Normal: h_loss: 0.034182158580643274 macro F 0.4392260438015372 micro F 0.5565044121833191 micro P 0.6086550435865504 micro R 0.5125852123754588
+Multi only: h_loss: 0.05796403339755941 macro F 0.4124581213734589 micro F 0.4790764790764791
+Jaccard: 0.5019026654380397
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10062084286974776
+Normal: h_loss: 0.03341792332782401 macro F 0.4469715630334381 micro F 0.5522512370780461 micro P 0.6283866651800647 micro R 0.4925712288061528
+Multi only: h_loss: 0.05706945591338655 macro F 0.39656614531337697 micro F 0.4759898904802021
+Jaccard: 0.49111805057847885
+patience 1 not best model , ignoring ...
+Training Loss for epoch 7: 0.05164136763730467
+Training on epoch=8 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11645531751085014
+Normal: h_loss: 0.035421755473972125 macro F 0.4618916178771068 micro F 0.558336752838189 micro P 0.5836431226765799 micro R 0.5351337178814892
+Multi only: h_loss: 0.05461510230296358 macro F 0.45457977138233124 micro F 0.5339596789978469
+Jaccard: 0.5047950581891403
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11598191172680933
+Normal: h_loss: 0.034518568357003905 macro F 0.4430054148388013 micro F 0.5570986206249414 micro P 0.6013978930307942 micro R 0.5188778185631883
+Multi only: h_loss: 0.05798697128176897 macro F 0.4180508844098595 micro F 0.48617886178861797
+Jaccard: 0.5074348998327699
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11798002716263327
+Normal: h_loss: 0.03419678509265895 macro F 0.4430631966083495 micro F 0.5555977950959894 micro P 0.6088314934388669 micro R 0.5109246635203636
+Multi only: h_loss: 0.05658776034498578 macro F 0.41651479806560004 micro F 0.4951913239206057
+Jaccard: 0.4991809153271221
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11736479606256278
+Normal: h_loss: 0.03500855650952917 macro F 0.4334137661283262 micro F 0.5373985311171242 micro P 0.6009293278582235 micro R 0.48601643069393463
+Multi only: h_loss: 0.05688595283971006 macro F 0.42322841953098667 micro F 0.49075975359342916
+Jaccard: 0.4750264496092284
+patience 2 not best model , ignoring ...
+Training Loss for epoch 8: 0.04073604878369324
+Training on epoch=9 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.13270374667462032
+Normal: h_loss: 0.03597390630256403 macro F 0.44512944100960217 micro F 0.5457148134466199 micro P 0.5785196788721363 micro R 0.5164306939346268
+Multi only: h_loss: 0.05697770437654831 macro F 0.4419979864894598 micro F 0.5098658247829518
+Jaccard: 0.49390805774546936
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12924217072985758
+Normal: h_loss: 0.035688689318258277 macro F 0.4397253382370782 micro F 0.5303176130895092 micro P 0.5900621118012422 micro R 0.48155916797762627
+Multi only: h_loss: 0.057757592439673364 macro F 0.4290640532870963 micro F 0.48696006519967394
+Jaccard: 0.4677997337974817
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1284191719443903
+Normal: h_loss: 0.03503049627755269 macro F 0.452715138006889 micro F 0.5558646267964766 micro P 0.5919233807266983 micro R 0.5239468624366369
+Multi only: h_loss: 0.057207083218643914 macro F 0.43938195914506567 micro F 0.4989955805544396
+Jaccard: 0.5079690112965427
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12975896250872695
+Normal: h_loss: 0.034876917901388055 macro F 0.44691521988006366 micro F 0.5563308214717647 micro P 0.5946698488464598 micro R 0.5226359028141934
+Multi only: h_loss: 0.05805578493439765 macro F 0.42176599403634435 micro F 0.4883767940165757
+Jaccard: 0.511023514555817
+saving best model ...
+Training Loss for epoch 9: 0.03163510400131289
+Training on epoch=10 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1427886003668994
+Normal: h_loss: 0.03513288186166245 macro F 0.43107976099395084 micro F 0.530308955807587 micro P 0.6017306412247615 micro R 0.4740429994756162
+Multi only: h_loss: 0.05706945591338655 macro F 0.4062547534070756 micro F 0.48101793909052987
+Jaccard: 0.46840551517013085
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.14529393189356418
+Normal: h_loss: 0.03589711711448171 macro F 0.4415503373543843 micro F 0.5416258112714198 micro P 0.581453634085213 micro R 0.5069043873448698
+Multi only: h_loss: 0.059179741260666115 macro F 0.41973917325493787 micro F 0.4792087202260799
+Jaccard: 0.49484659226647576
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.14652917532816115
+Normal: h_loss: 0.035312056633854526 macro F 0.4503174802852811 micro F 0.5548743950218944 micro P 0.5870476933580415 micro R 0.5260443978325468
+Multi only: h_loss: 0.057207083218643914 macro F 0.4467295261642554 micro F 0.4993978321959053
+Jaccard: 0.5103836046551314
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.14295552252542282
+Normal: h_loss: 0.03704895493571648 macro F 0.46134925518124564 micro F 0.5454463885150292 micro P 0.5603797935103245 micro R 0.5312882363223213
+Multi only: h_loss: 0.05743646206073952 macro F 0.45952542647285155 micro F 0.5090196078431373
+Jaccard: 0.5009334152418009
+patience 4 not best model , ignoring ...
+Training Loss for epoch 10: 0.024447751055925497
+Training on epoch=11 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.16029225380751205
+Normal: h_loss: 0.035889803858473866 macro F 0.4508688316300395 micro F 0.5396125521834982 micro P 0.582363065708211 micro R 0.5027093165530502
+Multi only: h_loss: 0.058560418387007984 macro F 0.44311475547894885 micro F 0.4837209302325581
+Jaccard: 0.48993549708201095
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15426201067214199
+Normal: h_loss: 0.03593734002252483 macro F 0.4564690996077196 micro F 0.5489260143198093 micro P 0.5780011598685483 micro R 0.5226359028141934
+Multi only: h_loss: 0.05693182860812918 macro F 0.4604051992490409 micro F 0.5112248916896416
+Jaccard: 0.4962202655199483
+patience 6 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1640662798144818
+Normal: h_loss: 0.036851497023504806 macro F 0.448527764414429 micro F 0.541700773078672 micro P 0.5646568069776261 micro R 0.5205383674182835
+Multi only: h_loss: 0.057895219744930726 macro F 0.4337615314688708 micro F 0.4990075426756649
+Jaccard: 0.49366745162281184
+patience 7 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15674502709431354
+Normal: h_loss: 0.03739267796808495 macro F 0.4462926508294102 micro F 0.5249465762333922 micro P 0.5602935343117811 micro R 0.4937947911204335
+Multi only: h_loss: 0.05830810166070282 macro F 0.4315714458833661 micro F 0.49098918702442934
+Jaccard: 0.4718303129586023
+patience 8 not best model , ignoring ...
+Training Loss for epoch 11: 0.0197036968199525
+Training on epoch=12 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.17221694841585788
+Normal: h_loss: 0.03568503269025435 macro F 0.4479584101267636 micro F 0.5534660260809884 micro P 0.5808124459809854 micro R 0.5285789197692711
+Multi only: h_loss: 0.057275896871272595 macro F 0.44499725755940783 micro F 0.5064241945048428
+Jaccard: 0.5044725435991948
+patience 9 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1682931720719216
+Normal: h_loss: 0.035670406178238676 macro F 0.44049509248354213 micro F 0.5447332804405657 micro P 0.5844767150726089 micro R 0.5100506904387345
+Multi only: h_loss: 0.05817047435544545 macro F 0.4292265306366435 micro F 0.4909674829385789
+Jaccard: 0.4936367359475789
+patience 10 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.17275847598652494
+Normal: h_loss: 0.0371988766838772 macro F 0.4446751714574306 micro F 0.5357550312599826 micro P 0.5605959316206666 micro R 0.5130221989162734
+Multi only: h_loss: 0.05745939994494908 macro F 0.4411873712074722 micro F 0.5048428543190353
+Jaccard: 0.48506876898399415
+patience 11 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.16438348876626852
+Normal: h_loss: 0.0377144612324299 macro F 0.46443970384963734 micro F 0.5367409270571326 micro P 0.5521160598780263 micro R 0.5221989162733788
+Multi only: h_loss: 0.0577346545554638 macro F 0.46369251892485425 micro F 0.5098344693281402
+Jaccard: 0.487998703115935
+patience 12 not best model , ignoring ...
+Training Loss for epoch 12: 0.01619014506351248
+Training on epoch=13 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.18499998105997878
+Normal: h_loss: 0.03596293641855227 macro F 0.4383515327806434 micro F 0.5385012434892777 micro P 0.5814165568953288 micro R 0.5014857542387694
+Multi only: h_loss: 0.057895219744930726 macro F 0.40917471882050915 micro F 0.4919484702093398
+Jaccard: 0.4851711545681036
+overfitting, loading best model ...
+Training Loss for epoch 13: 0.002688369930386253
+Testing:
+NOTE, this is on the test set
+Normal: h_loss: 0.03460870251915028 macro F 0.4413929365612911 micro F 0.5596583772921376
+Multi only: h_loss: 0.05824372759856631 macro F 0.40133096857277145 micro F 0.4901008591707135
+Jaccard: 0.5157453473373876
+STARTING Fold ----------- 4
+Training on epoch=1 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.14245376862784645
+Normal: h_loss: 0.04018634176307976 macro F 0.01816341749227655 micro F 0.19886280798950287 micro P 0.6135852451641925 micro R 0.11866028708133972
+Multi only: h_loss: 0.07440661392123744 macro F 0.014082720121796498 micro F 0.06218487394957983
+Jaccard: 0.1339374082795809
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12343789600472838
+Normal: h_loss: 0.03699044888765376 macro F 0.08747999844526969 micro F 0.33473628830724717 micro P 0.685798976017246 micro R 0.22140060896041758
+Multi only: h_loss: 0.07000622277535781 macro F 0.07731200526662234 micro F 0.18520434557682358
+Jaccard: 0.23947134910071327
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10634943755162193
+Normal: h_loss: 0.034478345448960786 macro F 0.16345737993047038 micro F 0.46239808426934265 micro P 0.6709133024487095 micro R 0.35276207046541974
+Multi only: h_loss: 0.06431682816250334 macro F 0.15159794130729204 micro F 0.32884972170686455
+Jaccard: 0.3700129688406542
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10062528073290322
+Normal: h_loss: 0.0338567186882944 macro F 0.20424901368936701 micro F 0.4825929030455434 micro P 0.6746875 micro R 0.3756415832970857
+Multi only: h_loss: 0.06353898124277714 macro F 0.17765202249969342 micro F 0.3441156228492774
+Jaccard: 0.39566055766014835
+saving best model ...
+Training Loss for epoch 1: 0.1262725908640568
+Training on epoch=2 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09801700205874074
+Normal: h_loss: 0.033436206467843614 macro F 0.2544829029071688 micro F 0.48864780225925514 micro P 0.684045717864412 micro R 0.3800782949108308
+Multi only: h_loss: 0.06100542270424038 macro F 0.2258343092921556 micro F 0.3830074173971679
+Jaccard: 0.39001228627009354
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09554885714495574
+Normal: h_loss: 0.033055917155435946 macro F 0.2532410085854553 micro F 0.5091225021720244 micro P 0.6773587631845109 micro R 0.4078294910830796
+Multi only: h_loss: 0.06209440839185705 macro F 0.21399642548918077 micro F 0.373542600896861
+Jaccard: 0.4241920070987343
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09297137623178907
+Normal: h_loss: 0.0321673565504834 macro F 0.2630198204594057 micro F 0.4978021350687903 micro P 0.724011956160744 micro R 0.37929534580252283
+Multi only: h_loss: 0.06120544048359854 macro F 0.20709191863978366 micro F 0.36220472440944884
+Jaccard: 0.3994658885362278
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09142969420470173
+Normal: h_loss: 0.03190773596220509 macro F 0.2953599483030168 micro F 0.522595469963891 micro P 0.7041132242370632 micro R 0.4154849934754241
+Multi only: h_loss: 0.060427593563872346 macro F 0.2412872736852735 micro F 0.3885765684731279
+Jaccard: 0.4363929558718137
+saving best model ...
+Training Loss for epoch 2: 0.09459471740373045
+Training on epoch=3 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09159285836040003
+Normal: h_loss: 0.03203571794234229 macro F 0.33354037622844274 micro F 0.539839277272966 micro P 0.681203605514316 micro R 0.44706394084384515
+Multi only: h_loss: 0.05884967552671348 macro F 0.28726964486711054 micro F 0.42807775377969765
+Jaccard: 0.45925053752431677
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09199451948687232
+Normal: h_loss: 0.03247085667480876 macro F 0.323857051327685 micro F 0.5119806550890305 micro P 0.695120131323683 micro R 0.40521966072205307
+Multi only: h_loss: 0.05822739799093253 macro F 0.2770288122494512 micro F 0.42468159859464205
+Jaccard: 0.4119569297976182
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08918344313752703
+Normal: h_loss: 0.03169565153797774 macro F 0.3423052312356201 micro F 0.536470588235294 micro P 0.6961832061068702 micro R 0.43636363636363634
+Multi only: h_loss: 0.058827451329007026 macro F 0.2803672772164083 micro F 0.4168319012998457
+Jaccard: 0.4543189652230301
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08938964391784218
+Normal: h_loss: 0.031596922581871904 macro F 0.3588861901702707 micro F 0.537246291436834 micro P 0.6988018946781833 micro R 0.43636363636363634
+Multi only: h_loss: 0.057671793048270956 macro F 0.3139328514664654 micro F 0.4332823760646429
+Jaccard: 0.449532439165899
+patience 3 not best model , ignoring ...
+Training Loss for epoch 3: 0.08513828845259239
+Training on epoch=4 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09086599535084411
+Normal: h_loss: 0.03202840468633445 macro F 0.36867694283432206 micro F 0.5389271990314259 micro P 0.6823513729672087 micro R 0.4453240539364941
+Multi only: h_loss: 0.0591385900968975 macro F 0.2972679484955565 micro F 0.4173417998686227
+Jaccard: 0.4612392999308124
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09066909858050116
+Normal: h_loss: 0.03192236247422077 macro F 0.38140829697427275 micro F 0.5612183353437877 micro P 0.6645637424116176 micro R 0.48568943018703786
+Multi only: h_loss: 0.05816072539781314 macro F 0.3290522700400046 micro F 0.4463719060715041
+Jaccard: 0.4970734787208631
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09157759771841849
+Normal: h_loss: 0.032145416782459885 macro F 0.38671571384145287 micro F 0.5499872024571282 micro P 0.6681592039800995 micro R 0.4673336233144846
+Multi only: h_loss: 0.05684949773313183 macro F 0.34590232646876296 micro F 0.46170033670033667
+Jaccard: 0.47250093853452113
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08963746135668976
+Normal: h_loss: 0.032094223990405006 macro F 0.3738189786685327 micro F 0.5320680279362371 micro P 0.6871385293307629 micro R 0.43410178338408
+Multi only: h_loss: 0.05720508489643524 macro F 0.31872622405473655 micro F 0.4409209383145092
+Jaccard: 0.44071874680045076
+patience 2 not best model , ignoring ...
+Training Loss for epoch 4: 0.07713898564537848
+Training on epoch=5 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09290875716921958
+Normal: h_loss: 0.03285845924322427 macro F 0.42805419172074305 micro F 0.548532958199357 micro P 0.6491853965988822 micro R 0.47490213136146153
+Multi only: h_loss: 0.05718286069872878 macro F 0.36681246376613 micro F 0.46205310474597533
+Jaccard: 0.47875499129722526
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09280994477432655
+Normal: h_loss: 0.031944302242244295 macro F 0.41310591321846185 micro F 0.5563680682510664 micro P 0.668293278028547 micro R 0.47655502392344495
+Multi only: h_loss: 0.05713841230331585 macro F 0.3478244718696793 micro F 0.45610323672519576
+Jaccard: 0.484846933551756
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09511176103656803
+Normal: h_loss: 0.032799953195161546 macro F 0.4243735306721593 micro F 0.5551919071704849 micro P 0.6456002767846846 micro R 0.4869943453675511
+Multi only: h_loss: 0.056360565383589654 macro F 0.399146124978352 micro F 0.48244897959183675
+Jaccard: 0.48577693594075305
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09248813819260342
+Normal: h_loss: 0.032533019350875395 macro F 0.41574264075856615 micro F 0.5392781316348195 micro P 0.6661975435005117 micro R 0.45297955632883863
+Multi only: h_loss: 0.058294070584051914 macro F 0.3487343813501389 micro F 0.4382094666952238
+Jaccard: 0.4625354083478382
+patience 6 not best model , ignoring ...
+Training Loss for epoch 5: 0.06794319969171107
+Training on epoch=6 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10551599591277792
+Normal: h_loss: 0.03318024250756922 macro F 0.43973674496950865 micro F 0.563791943082396 micro P 0.6300633931449446 micro R 0.5101348412353197
+Multi only: h_loss: 0.058071828606987286 macro F 0.3954052405930698 micro F 0.4768768768768768
+Jaccard: 0.5098972731306096
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10364971374207026
+Normal: h_loss: 0.03441618277289415 macro F 0.4309143630221838 micro F 0.530057918913521 micro P 0.6220555490448846 micro R 0.4617659852109613
+Multi only: h_loss: 0.05911636589919104 macro F 0.37533716826934477 micro F 0.4497310715763343
+Jaccard: 0.45898092215282776
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10421635905988046
+Normal: h_loss: 0.033443519723851456 macro F 0.40886793811910654 micro F 0.5486577181208053 micro P 0.633937735203558 micro R 0.4836015658982166
+Multi only: h_loss: 0.05936083207396213 macro F 0.35603635568407527 micro F 0.44871001031991736
+Jaccard: 0.4886266680318078
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10159416400713138
+Normal: h_loss: 0.03350202577191417 macro F 0.414432328675757 micro F 0.5405676461739044 micro P 0.6380963655735764 micro R 0.4688995215311005
+Multi only: h_loss: 0.05753844786203218 macro F 0.3514739532611929 micro F 0.46141044310380697
+Jaccard: 0.47349919797959156
+patience 3 not best model , ignoring ...
+Training Loss for epoch 6: 0.05670123785007979
+Training on epoch=7 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1208881450349945
+Normal: h_loss: 0.034924454065439016 macro F 0.4308821930241365 micro F 0.5496723089254562 micro P 0.6000617665225447 micro R 0.5070900391474554
+Multi only: h_loss: 0.05891634811983287 macro F 0.3828780615735891 micro F 0.4703296703296704
+Jaccard: 0.49924064025118614
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12060259903229112
+Normal: h_loss: 0.03492079743743509 macro F 0.43573840400308256 micro F 0.5489751582129027 micro P 0.6004752557082343 micro R 0.505611135276207
+Multi only: h_loss: 0.05740510267579341 macro F 0.3885596429018539 micro F 0.49023090586145646
+Jaccard: 0.49410770963448325
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11634300878320854
+Normal: h_loss: 0.0347013997571999 macro F 0.4341627945564965 micro F 0.5520203927492446 micro P 0.6034678501393332 micro R 0.5086559373640713
+Multi only: h_loss: 0.05791625922304205 macro F 0.39388125451678985 micro F 0.48436881677878907
+Jaccard: 0.4983447663902256
+patience 6 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1165918568234074
+Normal: h_loss: 0.034946393833462534 macro F 0.440353045769414 micro F 0.5398873429300467 micro P 0.6044631306597671 micro R 0.48777729447585905
+Multi only: h_loss: 0.05784958662992266 macro F 0.39314433233730484 micro F 0.4740351586179025
+Jaccard: 0.48260298283335057
+patience 7 not best model , ignoring ...
+Training Loss for epoch 7: 0.04489816627614056
+Training on epoch=8 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.13638387894458337
+Normal: h_loss: 0.035721598970293554 macro F 0.43870872817529255 micro F 0.5478361490395742 micro P 0.5853610286844708 micro R 0.5148325358851674
+Multi only: h_loss: 0.059160814294603965 macro F 0.4070037446780705 micro F 0.476808176100629
+Jaccard: 0.49867240025937676
+patience 8 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.13005340508517826
+Normal: h_loss: 0.035739882110313155 macro F 0.4446693579933144 micro F 0.5388317448334434 micro P 0.588720486648108 micro R 0.4967377120487168
+Multi only: h_loss: 0.05840519157258423 macro F 0.41153221457249967 micro F 0.47980997624703087
+Jaccard: 0.4826541756254055
+patience 9 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12853287048565398
+Normal: h_loss: 0.037655955184367186 macro F 0.43101364246409546 micro F 0.5213349446871804 micro P 0.5597365006487673 micro R 0.4878642888212266
+Multi only: h_loss: 0.05889412392212641 macro F 0.40772106124054047 micro F 0.482421875
+Jaccard: 0.46751817344117985
+patience 10 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1310391035821551
+Normal: h_loss: 0.03603241235062674 macro F 0.42615166176362534 micro F 0.533957623912221 micro P 0.5850347186236916 micro R 0.491083079599826
+Multi only: h_loss: 0.05824962218863899 macro F 0.3903591560526022 micro F 0.4825271470878578
+Jaccard: 0.47791884236032944
+patience 11 not best model , ignoring ...
+Training Loss for epoch 8: 0.03480028562130852
+Training on epoch=9 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15030265239661336
+Normal: h_loss: 0.03621158712281882 macro F 0.4409134729239369 micro F 0.5348301939968998 micro P 0.581274249540535 micro R 0.4952588081774685
+Multi only: h_loss: 0.05862743354964886 macro F 0.407770408166608 micro F 0.48070866141732294
+Jaccard: 0.48265417562540525
+patience 12 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15059709664595533
+Normal: h_loss: 0.036833213883485205 macro F 0.43295707774891007 micro F 0.5268448494527691 micro P 0.5725954666122116 micro R 0.4878642888212266
+Multi only: h_loss: 0.05809405280469375 macro F 0.40667770527359803 micro F 0.48865414710485133
+Jaccard: 0.46978942698201454
+overfitting, loading best model ...
+Training Loss for epoch 9: 0.012121210399135116
+Testing:
+NOTE, this is on the test set
+Normal: h_loss: 0.03247650635710337 macro F 0.4483048616999885 micro F 0.5701593937810296
+Multi only: h_loss: 0.056664959890766343 macro F 0.3973034821020354 micro F 0.48567002323780006
+Jaccard: 0.5174897119341567
+STARTING Fold ----------- 5
+Training on epoch=1 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1319183707984819
+Normal: h_loss: 0.038284895201041405 macro F 0.06144568536553922 micro F 0.24447972290373793 micro P 0.7254817987152035 micro R 0.14701032717174348
+Multi only: h_loss: 0.070234409553295 macro F 0.054912152470252544 micro F 0.15306666666666666
+Jaccard: 0.157827377905191
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11661011126612132
+Normal: h_loss: 0.036185990726791385 macro F 0.10742973597306542 micro F 0.328629579375848 micro P 0.7528753497046938 micro R 0.2101883190141456
+Multi only: h_loss: 0.0666298098186643 macro F 0.0973227241432348 micro F 0.23078886903242277
+Jaccard: 0.2237125012798197
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10404511674776333
+Normal: h_loss: 0.03406880311252176 macro F 0.18185611168931268 micro F 0.4825901038485033 micro P 0.670111042566317 micro R 0.377071943070381
+Multi only: h_loss: 0.062140645731977 macro F 0.17131957827770786 micro F 0.36711711711711714
+Jaccard: 0.39083137094297155
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10091669561599433
+Normal: h_loss: 0.033882315084321844 macro F 0.20497583125944185 micro F 0.4069380440348182 micro P 0.7751767861497196 micro R 0.27588301657554454
+Multi only: h_loss: 0.06251658558160106 macro F 0.18381629911451844 micro F 0.3179734620024125
+Jaccard: 0.28866250298624624
+patience 1 not best model , ignoring ...
+Training Loss for epoch 1: 0.12166767777150538
+Training on epoch=2 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09725097663722702
+Normal: h_loss: 0.032869429127236026 macro F 0.23497396261588785 micro F 0.5046018186828327 micro P 0.6913319238900634 micro R 0.3972923717781828
+Multi only: h_loss: 0.06245024325519682 macro F 0.2067633817144847 micro F 0.3685152057245081
+Jaccard: 0.4203610798266274
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09519712342397699
+Normal: h_loss: 0.03244526027878132 macro F 0.2971126151923761 micro F 0.5285084223391254 micro P 0.6816063596491229 micro R 0.43157163933003556
+Multi only: h_loss: 0.061654135338345864 macro F 0.25770273986849374 micro F 0.3902012248468941
+Jaccard: 0.45339749496604254
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09151656693167046
+Normal: h_loss: 0.03239772411473036 macro F 0.3375887680405122 micro F 0.5470347648261759 micro P 0.6656712703745179 micro R 0.4642888136769938
+Multi only: h_loss: 0.05931003980539584 macro F 0.2951407671044895 micro F 0.4344158582876424
+Jaccard: 0.47190710214668463
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09105721148181208
+Normal: h_loss: 0.0316334888619111 macro F 0.2998894809632576 micro F 0.5309840065058282 micro P 0.7074544929211211 micro R 0.42497613468714746
+Multi only: h_loss: 0.05975232198142415 macro F 0.2600113549536319 micro F 0.41107236268526587
+Jaccard: 0.4416624006006624
+patience 1 not best model , ignoring ...
+Training Loss for epoch 2: 0.09322280334804334
+Training on epoch=3 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08973970541485844
+Normal: h_loss: 0.03149453699776214 macro F 0.29637843540621805 micro F 0.5367611466681009 micro P 0.7057991513437057 micro R 0.43304694957910267
+Multi only: h_loss: 0.05973020787262273 macro F 0.24518111023929984 micro F 0.40987546427791127
+Jaccard: 0.45502713217978946
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08830131319255854
+Normal: h_loss: 0.03144334420570726 macro F 0.3568658778630008 micro F 0.5136037106171164 micro P 0.737491877842755 micro R 0.3939946194567387
+Multi only: h_loss: 0.05919946926138877 macro F 0.2924485939497551 micro F 0.39338318604124184
+Jaccard: 0.4143459267601791
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.0896881774534732
+Normal: h_loss: 0.03201377817431877 macro F 0.3515019152169555 micro F 0.5506338859518555 micro P 0.6738693467336684 micro R 0.4655037750585785
+Multi only: h_loss: 0.060659000442282174 macro F 0.30668295487556857 micro F 0.41848632605469577
+Jaccard: 0.48585713798163904
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08786958005053123
+Normal: h_loss: 0.03175050095803654 macro F 0.3767751804263254 micro F 0.5300135317997293 micro P 0.7042577675489068 micro R 0.42488935173132
+Multi only: h_loss: 0.05685537372843874 macro F 0.3325838354929502 micro F 0.4479278505475628
+Jaccard: 0.4354441827923965
+patience 1 not best model , ignoring ...
+Training Loss for epoch 3: 0.08460934965621764
+Training on epoch=4 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08739668362546726
+Normal: h_loss: 0.031161783849405433 macro F 0.3958517491355143 micro F 0.5501478040540541 micro P 0.7021964694785069 micro R 0.45222598281697474
+Multi only: h_loss: 0.05632463511720478 macro F 0.3431971548479998 micro F 0.4591208324485029
+Jaccard: 0.4624108392205048
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08652319043594019
+Normal: h_loss: 0.030924103029150638 macro F 0.4280599024209457 micro F 0.5636448067695166 micro P 0.6950878086026979 micro R 0.4740085047296711
+Multi only: h_loss: 0.05616983635559487 macro F 0.3798568125012733 micro F 0.47039199332777304
+Jaccard: 0.48516603528889846
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08660277563155924
+Normal: h_loss: 0.031048428381283914 macro F 0.4047214053936775 micro F 0.5510495426426266 micro P 0.7051420838971583 micro R 0.45222598281697474
+Multi only: h_loss: 0.05689960194604157 macro F 0.34974555210119174 micro F 0.45266964475643484
+Jaccard: 0.46418040339920164
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.086987451830326
+Normal: h_loss: 0.031022831985256474 macro F 0.3997631735033494 micro F 0.5571100438504908 micro P 0.699069828376785 micro R 0.4630738522954092
+Multi only: h_loss: 0.05871295886775763 macro F 0.33730610227464114 micro F 0.43208556149732624
+Jaccard: 0.4812207774478691
+patience 5 not best model , ignoring ...
+Training Loss for epoch 4: 0.07824051270255257
+Training on epoch=5 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09007925732595058
+Normal: h_loss: 0.03175050095803654 macro F 0.4031426872277616 micro F 0.5568315214617465 micro P 0.6759603469640645 micro R 0.47340102403887874
+Multi only: h_loss: 0.059818664307828395 macro F 0.3352322029876613 micro F 0.4299262381454162
+Jaccard: 0.49242687962868215
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09033567403009583
+Normal: h_loss: 0.03125685617750735 macro F 0.4308646038381397 micro F 0.5754445217045794 micro P 0.6727441644408315 micro R 0.5027336631085655
+Multi only: h_loss: 0.05501990269792127 macro F 0.3758478257485453 micro F 0.4955393349553933
+Jaccard: 0.5082795809016761
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09086365094521864
+Normal: h_loss: 0.03265734470300868 macro F 0.4225565681857063 micro F 0.5652956923825748 micro P 0.6436488583462647 micro R 0.5039486244901501
+Multi only: h_loss: 0.05484298982750995 macro F 0.3666242394369571 micro F 0.5051875498802874
+Jaccard: 0.5015340773352447
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.08778832517880872
+Normal: h_loss: 0.03162983223390718 macro F 0.4078645026946353 micro F 0.5718669570382102 micro P 0.6654763276120262 micro R 0.5013451358153259
+Multi only: h_loss: 0.05689960194604157 macro F 0.3668784015989513 micro F 0.475860664086372
+Jaccard: 0.5092129961434764
+saving best model ...
+Training Loss for epoch 5: 0.07133827318074275
+Training on epoch=6 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09840506922293066
+Normal: h_loss: 0.033096140063479065 macro F 0.43694044708109725 micro F 0.5672483863256037 micro P 0.6316013628620102 micro R 0.5147964939685846
+Multi only: h_loss: 0.05745245466607696 macro F 0.3880634129210782 micro F 0.48431917427550614
+Jaccard: 0.511504726801133
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09307519658092492
+Normal: h_loss: 0.03266465795901651 macro F 0.4381890580603631 micro F 0.5571364830697536 micro P 0.6497456059204441 micro R 0.48763342879458477
+Multi only: h_loss: 0.05550641309155241 macro F 0.38568289879466466 micro F 0.4906655844155845
+Jaccard: 0.4884679703764381
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.095143032296569
+Normal: h_loss: 0.032840176103204666 macro F 0.42482967937170946 micro F 0.5586081486214184 micro P 0.6440389845874886 micro R 0.49318753796754317
+Multi only: h_loss: 0.057585139318885446 macro F 0.36539040432877556 micro F 0.46965376782077395
+Jaccard: 0.4982082522780794
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.09451371497106831
+Normal: h_loss: 0.03286577249923211 macro F 0.4132114530762464 micro F 0.570157819225251 micro P 0.6350271652285076 micro R 0.5173131996875814
+Multi only: h_loss: 0.05787262273330385 macro F 0.36182687012820475 micro F 0.4810628594090819
+Jaccard: 0.5146633220709191
+saving best model ...
+Training Loss for epoch 6: 0.06188994305018909
+Training on epoch=7 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10191066344806893
+Normal: h_loss: 0.03386403194430224 macro F 0.4431461166171781 micro F 0.5590629910012855 micro P 0.6193037974683544 micro R 0.5095027336631086
+Multi only: h_loss: 0.05590446704997789 macro F 0.3987664271546874 micro F 0.504313725490196
+Jaccard: 0.4995802191051503
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10648980932932885
+Normal: h_loss: 0.03327165820766722 macro F 0.433330067421323 micro F 0.5543419699270216 micro P 0.6362716438048123 micro R 0.49110474702768375
+Multi only: h_loss: 0.05747456877487837 macro F 0.39091124150137235 micro F 0.4705642697086983
+Jaccard: 0.49286713764035384
+patience 2 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10389038012861242
+Normal: h_loss: 0.033765302988196404 macro F 0.41918119978200835 micro F 0.5579279969360399 micro P 0.6222103577148959 micro R 0.5056842836066996
+Multi only: h_loss: 0.05630252100840336 macro F 0.39061003147736095 micro F 0.4966389877421906
+Jaccard: 0.5005904235350331
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.10246906857630535
+Normal: h_loss: 0.034021266948470796 macro F 0.4634718272237571 micro F 0.5603024574669188 micro P 0.6151291895818201 micro R 0.5144493621452747
+Multi only: h_loss: 0.05559486952675807 macro F 0.43128032806918337 micro F 0.5095591104174795
+Jaccard: 0.505237022627214
+patience 4 not best model , ignoring ...
+Training Loss for epoch 7: 0.051137237067119645
+Training on epoch=8 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11920405882440742
+Normal: h_loss: 0.03484035162134886 macro F 0.44425831415832084 micro F 0.5491198182850653 micro P 0.6038089291289416 micro R 0.5035147097110128
+Multi only: h_loss: 0.057651481645289694 macro F 0.4111055378668196 micro F 0.48952418249461527
+Jaccard: 0.49887717142759636
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1143451243031778
+Normal: h_loss: 0.034606327429097986 macro F 0.45251728034051275 micro F 0.5602230483271374 micro P 0.6029808942682805 micro R 0.5231276577280222
+Multi only: h_loss: 0.05855816010614772 macro F 0.4120772977442367 micro F 0.482610394685424
+Jaccard: 0.5169994198150236
+saving best model ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11605735446216874
+Normal: h_loss: 0.034182158580643274 macro F 0.4499402352462068 micro F 0.5590566037735848 micro P 0.6123798697943578 micro R 0.5142757962336197
+Multi only: h_loss: 0.05749668288367979 macro F 0.4144340775989007 micro F 0.4889937106918238
+Jaccard: 0.5113665062625851
+patience 1 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.11362126339549258
+Normal: h_loss: 0.03531571326185844 macro F 0.4443202675461619 micro F 0.544906229384601 micro P 0.5961439323641613 micro R 0.5017790505944633
+Multi only: h_loss: 0.05807164971251658 macro F 0.40812681847009874 micro F 0.4828672705789681
+Jaccard: 0.49303266100133153
+patience 2 not best model , ignoring ...
+Training Loss for epoch 8: 0.04070534920202871
+Training on epoch=9 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.133728045620443
+Normal: h_loss: 0.03651874387514809 macro F 0.42920703316670056 micro F 0.540637505174555 micro P 0.5751614797416325 micro R 0.5100234313980734
+Multi only: h_loss: 0.05926581158779301 macro F 0.4110302616455095 micro F 0.48402002310358105
+Jaccard: 0.49382785570458426
+patience 3 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12972271500236
+Normal: h_loss: 0.03470871301320774 macro F 0.43269433259111395 micro F 0.5557427688851446 micro P 0.6031697653154526 micro R 0.515230408747722
+Multi only: h_loss: 0.058226448474126495 macro F 0.3980036962701351 micro F 0.487842832133826
+Jaccard: 0.5091225555441796
+patience 4 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.13577699829154216
+Normal: h_loss: 0.035750851994324914 macro F 0.4472842699772262 micro F 0.5564980721251984 micro P 0.5829690172970918 micro R 0.5323266510457346
+Multi only: h_loss: 0.05913312693498452 macro F 0.42097311688769196 micro F 0.4906666666666666
+Jaccard: 0.5166393638442376
+patience 5 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.12811658424783465
+Normal: h_loss: 0.03550585791806228 macro F 0.4155600208382282 micro F 0.5488756736666047 micro P 0.5906409359064093 micro R 0.5126269200728977
+Multi only: h_loss: 0.058580274214949137 macro F 0.3876262191361178 micro F 0.4863292611983712
+Jaccard: 0.5016842428586059
+patience 6 not best model , ignoring ...
+Training Loss for epoch 9: 0.03155991188405071
+Training on epoch=10 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.14212458441744347
+Normal: h_loss: 0.03583129781041115 macro F 0.43918334035207307 micro F 0.5502776630409839 micro P 0.5839664913306059 micro R 0.5202638201857155
+Multi only: h_loss: 0.05860238832375055 macro F 0.4093855107027742 micro F 0.49350152905198774
+Jaccard: 0.5069502747346509
+patience 7 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1430016947604866
+Normal: h_loss: 0.036098231654697305 macro F 0.4426095470129752 micro F 0.5445233920826796 micro P 0.5813220372377106 micro R 0.5121062223379328
+Multi only: h_loss: 0.05827067669172932 macro F 0.4256449545910848 micro F 0.49239067617029475
+Jaccard: 0.4989556670420808
+patience 8 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.1474185399234362
+Normal: h_loss: 0.03519138790972517 macro F 0.4557072085222872 micro F 0.5532862978091349 micro P 0.5947510228520108 micro R 0.5172264167317538
+Multi only: h_loss: 0.05959752321981424 macro F 0.42449712008554136 micro F 0.4770036871725209
+Jaccard: 0.5113801576738
+patience 9 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.14226577745326602
+Normal: h_loss: 0.03546563501001916 macro F 0.45132456666651144 micro F 0.5494495284990942 micro P 0.5911635345861656 micro R 0.51323440076369
+Multi only: h_loss: 0.05701017249004865 macro F 0.4219398881828368 micro F 0.5009678668215254
+Jaccard: 0.4976024709054299
+patience 10 not best model , ignoring ...
+Training Loss for epoch 10: 0.025117144916689937
+Training on epoch=11 -------------------------
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15546830984758747
+Normal: h_loss: 0.035275490353815324 macro F 0.4282835512333972 micro F 0.5547195938149088 micro P 0.5924866890159732 micro R 0.5214787815673002
+Multi only: h_loss: 0.059111012826183106 macro F 0.3999731214237971 micro F 0.4862579281183932
+Jaccard: 0.508728371045357
+patience 11 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15274983968460243
+Normal: h_loss: 0.035630183270195556 macro F 0.44506666140989276 micro F 0.5526170798898071 micro P 0.5867212635273472 micro R 0.5222598281697475
+Multi only: h_loss: 0.05800530738611234 macro F 0.41233742585906963 micro F 0.49625504129057046
+Jaccard: 0.5096378963175318
+patience 12 not best model , ignoring ...
+Evaluating:
+Evaluation results:
+Evaluation Loss 0.15342491700310076
+Normal: h_loss: 0.03564480978221123 macro F 0.4374198527454635 micro F 0.5530900421786172 micro P 0.5862571678491593 micro R 0.5234747895513321
+Multi only: h_loss: 0.05827067669172932 macro F 0.40509957045610895 micro F 0.4953074123731086
+Jaccard: 0.5099740623186925
+overfitting, loading best model ...
+Training Loss for epoch 11: 0.01435923381494522
+Testing:
+NOTE, this is on the test set
+Normal: h_loss: 0.03345705335755087 macro F 0.4616478687583912 micro F 0.5717654986522911
+Multi only: h_loss: 0.05704898446833931 macro F 0.40003560954996625 micro F 0.49528123820309555
+Jaccard: 0.5280756710275786
+                precision    recall  f1-score   support
+
+    admiration     0.7086    0.6369    0.6708       504
+     amusement     0.7944    0.8636    0.8276       264
+         anger     0.6395    0.2778    0.3873       198
+     annoyance     0.5577    0.1812    0.2736       320
+      approval     0.5283    0.2393    0.3294       351
+        caring     0.5000    0.2148    0.3005       135
+     confusion     0.5652    0.2549    0.3514       153
+     curiosity     0.5181    0.3521    0.4193       284
+        desire     0.6875    0.3976    0.5038        83
+disappointment     0.5610    0.1523    0.2396       151
+   disapproval     0.5246    0.2397    0.3290       267
+       disgust     0.5930    0.4146    0.4880       123
+ embarrassment     0.8571    0.3243    0.4706        37
+    excitement     0.6512    0.2718    0.3836       103
+          fear     0.7143    0.5769    0.6383        78
+     gratitude     0.9631    0.8892    0.9247       352
+         grief     1.0000    0.1667    0.2857         6
+           joy     0.6522    0.5590    0.6020       161
+          love     0.7816    0.8571    0.8176       238
+   nervousness     0.5556    0.2174    0.3125        23
+      optimism     0.7477    0.4462    0.5589       186
+         pride     0.7143    0.3125    0.4348        16
+   realization     0.6667    0.1241    0.2093       145
+        relief     0.5000    0.0909    0.1538        11
+       remorse     0.5965    0.6071    0.6018        56
+       sadness     0.7419    0.4423    0.5542       156
+      surprise     0.6702    0.4468    0.5362       141
+       neutral     0.6068    0.7443    0.6685      1787
+
+     micro avg     0.6584    0.5350    0.5903      6329
+     macro avg     0.6642    0.4036    0.4740      6329
+  weighted avg     0.6474    0.5350    0.5596      6329
+   samples avg     0.5804    0.5638    0.5620      6329
+
+Normal: h_loss: 0.030930006054384163 macro F 0.4740317544399129 micro F 0.5903068340306834
+Multi only: h_loss: 0.05632360471070148 macro F 0.40053133578192524 micro F 0.49034749034749037
+Single only: h_loss: 0.02629940865234983 macro F 0.49148130975857535 micro F 0.6194550776852061
+Final Jaccard: 0.5414593698175789
+trainer_lstm_seq2emo.py
+Namespace(batch_size=32, pad_len=50, postname='', gamma=0.2, folds=5, en_lr=0.0005, de_lr=0.0001, loss='ce', dataset='goemotions', en_dim=1200, de_dim=400, criterion='jaccard', glove_path='data/glove.840B.300d.txt', attention='dot', dropout=0.3, encoder_dropout=0.2, decoder_dropout=0, attention_dropout=0.2, patience=13, download_elmo=True, scheduler=False, glorot_init=False, warmup_epoch=0, stop_epoch=10, max_epoch=20, min_lr_ratio=0.1, fix_emb=False, fix_emo_emb=False, seed=0, input_feeding=True, dev_split_seed=0, normal_init=False, unify_decoder=False, eval_every=True, log_path='logs/lstm_log.txt', attention_heads=1, concat_signal=False, no_cross=False, output_path=None, attention_type='luong', load_emo_emb=False, shuffle_emo=None, single_direction=False, encoder_model='LSTM', encoder_requires_grad=False)
