@@ -1,6 +1,6 @@
 # Seq2Emo: A Sequence to Multi-Label Emotion Classification
 
-This repo presents the script to replicate the results of Seq2Emo, CC, BR, BR-att as described in the paper.
+This repository offers the script and environment settings needed for replicating the ablations we performed on the GoEmotions dataset and which are detailed in the project report.
 
 
 ## Requirements
@@ -12,25 +12,31 @@ We use [GloVe 840B 300d](https://nlp.stanford.edu/projects/glove/) pretrain embe
 or set the python argument `--glove_path` to point at it.  
 You also need to use the argument  `--download_elmo` to download the ELMo embedding for first time of running the code.
 
+The ELMo embeddings are needed for reproducing the results of the baseline.
+
 ## Training/evaluation 
-For Seq2Emo, you can get the classification result of SemEval'18 dataset by the following script.   
+For Seq2Emo (baseline), you can get the classification result of GoEmotions dataset by the following script.   
 
 ```
-python trainer_lstm_seq2emo.py --dataset sem18 --batch_size 16 --glove_path data/glove.840B.300d.txt --download_emo --seed 0 
-```
-Note that the results reported in the paper are based 5 runs with `--seed` set to `1`, `2`, `3`, `4`, `5` respectively.
-
-To change the dataset to GoEmotions, you can specify the `--dataset` option as `goemotions`. In the paper, we set the batch size to 32 for GoEmotions dataset to accelerate training. 
-
-Similarly, you can generate the results for CC by the following:
-```
-python trainer_lstm_cc.py --dataset sem18 --batch_size 16 
+python3 -u trainer_lstm_seq2emo.py --dataset goemotions --batch_size 32 --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --log_path "YOUR FILE HERE"
 ```
 
-For BR, there are two variants: with self-attention and w/o self-attention. You can specify the model by setting the 
-`--attention` option to `self` or `None`.  
+To train the baseline, with BERT-base representations instead of ELMo,
 ```
-python trainer_lstm_binary.py --dataset sem18 --batch_size 16 --attention [self|None] 
+python3 -u trainer_lstm_seq2emo.py --dataset goemotions  --batch_size 32 --encoder_model BERT --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --log_path "YOUR FILE HERE"
 ```
+
+To train the baseline, with RoBERTa-base representations instead of ELMo,
+```
+python3 -u trainer_lstm_seq2emo.py --dataset goemotions  --batch_size 32 --encoder_model RoBERTa --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --transformer_type base --log_path "YOUR FILE HERE"
+```
+
+To train the baseline, with RoBERTa-large representations instead of ELMo,
+```
+python3 -u trainer_lstm_seq2emo.py --dataset goemotions  --batch_size 32 --encoder_model RoBERTa --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --transformer_type large --log_path "YOUR FILE HERE"
+```
+
+
+
 
 
