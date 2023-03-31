@@ -42,9 +42,9 @@ The same is available as a script in the file **run.sh**
 
 Our changes to the code mainly exist in the following files,
 
-* trainer_lstm_seq2emo.py: Modified the code to include various kinds of text encoders.
-* models/seq2seq_lstm.py: Minor modifications in order to conduct experiments.
-* models/seq2seq_skep.py: Experimenting with certain concepts, not completely done yet.
+* **trainer_lstm_seq2emo.py**: Modified the code to include various kinds of text encoders.
+* **models/seq2seq_lstm.py**: Minor modifications in order to conduct experiments.
+* **models/seq2seq_skep.py**: Experimenting with certain concepts, not completely done yet.
 
 
 
