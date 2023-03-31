@@ -36,6 +36,7 @@ To train the baseline, with RoBERTa-large representations instead of ELMo,
 python3 -u trainer_lstm_seq2emo.py --dataset goemotions  --batch_size 32 --encoder_model RoBERTa --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --transformer_type large --log_path "YOUR FILE HERE"
 ```
 
+The same is available as a script in the file **run.sh**
 
 
 
