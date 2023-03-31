@@ -1,4 +1,4 @@
-# Seq2Emo: A Sequence to Multi-Label Emotion Classification
+# Investigating Contextual Representations for fine-grained Emotion Classification
 
 This repository offers the script and environment settings needed for replicating the ablations we performed on the GoEmotions dataset and which are detailed in the project report.
 
