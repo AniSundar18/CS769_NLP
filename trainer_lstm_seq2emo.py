@@ -466,7 +466,7 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
                     decoder_logit = model(src.cuda(), src_len.cuda(), roberta_src.cuda())
                     preds.append(np.argmax(decoder_logit.data.cpu().numpy(), axis=-1))
 
-
+        torch.save(model.state_dict(), PATH)
         preds = np.concatenate(preds, axis=0)
         gold = np.asarray(y_test)
         binary_gold = gold
