@@ -180,6 +180,8 @@ elif args.encoder_model == 'BERT':
 elif args.encoder_model == 'RoBERTa':
     if args.transformer_type == 'base':
         model_type = 'roberta-base'
+    elif args.transformer_type == 'cardiff-emoji':
+        model_type = 'cardiffnlp/twitter-roberta-base-emoji'
     elif args.transformer_type == 'large':
         model_type = 'roberta-large'
     roberta_tokenizer = AutoTokenizer.from_pretrained(model_type)

@@ -38,7 +38,7 @@ class LSTMSeq2Seq(nn.Module):
         if self.args.encoder_model == 'LSTM':
             em_dim = 1024
         elif self.args.encoder_model == 'BERT' or self.args.encoder_model == 'RoBERTa':
-            if self.args.transformer_type == 'base' or self.args.transformer_type == 'SentiBERT':
+            if self.args.transformer_type == 'cardiff-emoji' or self.args.transformer_type == 'base' or self.args.transformer_type == 'SentiBERT':
                 em_dim = 768
             elif self.args.transformer_type == 'large':
                 em_dim = 1024
