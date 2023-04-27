@@ -168,8 +168,14 @@ if args.encoder_model == 'SKEP':
             X_train_dev, y_train_dev, X_test, y_test, EMOS, EMOS_DIC, data_set_name = pkl.load(f)
 
 elif args.encoder_model == 'BERT':
-    bert_tokenizer = BertTokenizer.from_pretrained('bert-base-cased', padding = 'max_len', max_length=42, truncation = True)
-    bert_model = BertModel.from_pretrained("bert-base-uncased")
+    if args.transformer_type == 'base':
+        model_name = 'bert-base-uncased'
+        tokenizer_name = 'bert-base-cased'
+    elif args.transformer_type == 'SentiBERT':
+        model_name = 'adresgezgini/Finetuned-SentiBERtr-Pos-Neg-Reviews'
+        tokenizer_name = 'adresgezgini/Finetuned-SentiBERtr-Pos-Neg-Reviews'
+    bert_tokenizer = BertTokenizer.from_pretrained(model_name, padding = 'max_len', max_length=42, truncation = True)
+    bert_model = BertModel.from_pretrained(tokenizer_name)
 
 elif args.encoder_model == 'RoBERTa':
     if args.transformer_type == 'base':
