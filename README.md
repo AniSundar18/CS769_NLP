@@ -20,24 +20,31 @@ The training results of various models are available in the logs folder.
 For Seq2Emo (baseline), you can get the classification result of GoEmotions dataset by the following script.   
 
 ```
-python3 -u trainer_lstm_seq2emo.py --dataset goemotions --batch_size 32 --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --log_path "YOUR FILE HERE"
+python3 -u trainer_lstm_seq2emo.py --dataset goemotions --batch_size 64 --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --log_path "YOUR FILE HERE" --output_path "YOUR FILE HERE"
 ```
 
 To train the baseline, with BERT-base representations instead of ELMo,
 ```
-python3 -u trainer_lstm_seq2emo.py --dataset goemotions  --batch_size 32 --encoder_model BERT --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --log_path "YOUR FILE HERE"
+python3 -u trainer_lstm_seq2emo.py --dataset goemotions  --batch_size 32 --encoder_model BERT --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --log_path "YOUR FILE HERE" --output_path "YOUR FILE HERE"
+```
+To train the baseline, with SentiBERT representations instead of ELMo,
+```
+python3 -u trainer_lstm_seq2emo.py --dataset goemotions --en_dim 768 --batch_size 128 --encoder_model BERT --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --transformer_type "SentiBERT"  --log_path "YOUR FILE HERE" --output_path "YOUR FILE HERE"
 ```
 
 To train the baseline, with RoBERTa-base representations instead of ELMo,
 ```
-python3 -u trainer_lstm_seq2emo.py --dataset goemotions  --batch_size 32 --encoder_model RoBERTa --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --transformer_type base --log_path "YOUR FILE HERE"
+python3 -u trainer_lstm_seq2emo.py --dataset goemotions --batch_size 64 --encoder_model RoBERTa --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --transformer_type "base" --log_path "YOUR FILE HERE" --output_path "YOUR FILE HERE"
 ```
 
 To train the baseline, with RoBERTa-large representations instead of ELMo,
 ```
-python3 -u trainer_lstm_seq2emo.py --dataset goemotions  --batch_size 32 --encoder_model RoBERTa --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --transformer_type large --log_path "YOUR FILE HERE"
+python3 -u trainer_lstm_seq2emo.py --dataset goemotions --batch_size 64 --encoder_model RoBERTa --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --transformer_type "large" --log_path "YOUR FILE HERE" --output_path "YOUR FILE HERE"
 ```
-
+To train the baseline, with RoBERTa-Cardiff-Emoji representations instead of ELMo,
+```
+python3 -u trainer_lstm_seq2emo.py --dataset goemotions --batch_size 64 --encoder_model RoBERTa --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --transformer_type "cardiff-emoji" --log_path "YOUR FILE HERE" --output_path "YOUR FILE HERE"
+```
 The same is available as a script in the file **run.sh**
 
 Our changes to the code mainly exist in the following files,
