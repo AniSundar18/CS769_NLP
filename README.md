@@ -45,7 +45,6 @@ To train the baseline, with RoBERTa-Cardiff-Emoji representations instead of ELM
 ```
 python3 -u trainer_lstm_seq2emo.py --dataset goemotions --batch_size 64 --encoder_model RoBERTa --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --transformer_type "cardiff-emoji" --log_path "YOUR FILE HERE" --output_path "YOUR FILE HERE"
 ```
-The same is available as a script in the file **run.sh**
 
 <!-- Our changes to the code mainly exist in the following files,
 
@@ -83,6 +82,6 @@ You can download our saved checkpoints from [here](https://drive.google.com/driv
 
 `seq2emo_25K_LLM.pt`: This corresponds to the model trained with active learning with LLM annotation feedback. Corresponding log file: `AL_25k_LLM.txt`
 
-
+All the commands above are available in **run.sh**
 
 
