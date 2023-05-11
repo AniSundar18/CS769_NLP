@@ -1,9 +1,9 @@
-# Investigating Contextual Representations for fine-grained Emotion Classification
+# Investigating Contextual Representations for fine-grained Emotion Classification and LLM-based Active Learning
 
 This repository offers the script and environment settings needed for replicating the ablations we performed on the GoEmotions dataset and which are detailed in the project report.
+## Investigating Contextual Representations for fine-grained Emotion Classification
 
-
-## Requirements
+### Requirements
 The dependent packages are listed in the `requirements.txt`. Note that a cuda device is required.
 
 We have included the data and preprocessing script under `data` folder.
