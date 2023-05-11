@@ -73,6 +73,7 @@ parser.add_argument('--encoder_model', type=str, default='LSTM')
 parser.add_argument('--transformer_type', type=str, default='base')
 args = parser.parse_args()
 
+
 if args.log_path is not None:
     dir_path = os.path.dirname(args.log_path)
     if not os.path.exists(dir_path):
@@ -169,7 +170,7 @@ if args.encoder_model == 'SKEP':
 
 elif args.encoder_model == 'BERT':
     if args.transformer_type == 'base':
-        model_name = 'bert-base-uncased'
+        model_name = 'bert-base-cased'
         tokenizer_name = 'bert-base-cased'
     elif args.transformer_type == 'SentiBERT':
         model_name = 'adresgezgini/Finetuned-SentiBERtr-Pos-Neg-Reviews'
@@ -440,7 +441,7 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
                         break
 
             logger(f"Training Loss for epoch {epoch}:", train_loss_sum / len(train_set))
-            # model, best_model, exit_training = eval(model, best_model, loss_criterion, es, dev_loader, dev_set)
+            model, best_model, exit_training = eval(model, best_model, loss_criterion, es, dev_loader, dev_set)
             if exit_training:
                 break
 
@@ -466,7 +467,7 @@ def train(X_train, y_train, X_dev, y_dev, X_test, y_test):
                     decoder_logit = model(src.cuda(), src_len.cuda(), roberta_src.cuda())
                     preds.append(np.argmax(decoder_logit.data.cpu().numpy(), axis=-1))
 
-        torch.save(best_model.state_dict(), PATH)
+        torch.save(best_model.state_dict(), args.output_path)
         preds = np.concatenate(preds, axis=0)
         gold = np.asarray(y_test)
         binary_gold = gold
