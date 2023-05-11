@@ -66,7 +66,7 @@ This will sample 5k samples points from the unlabeled set and use the ground tru
 ```
 python3 -u trainer_lstm_seq2emo_active.py --dataset goemotions --batch_size 128 --glove_path data/glove.840B.300d.txt --download_elmo --model_save_path < YOUR SAVE PATH> --log_path <YOUR LOG FILE SAVE PATH> --split_mode 20k --openai_api_key <YOUR API KEY> --openai_org_key <YOUR ORG KEY> --use_LLM
 ```
-Since we have used GPT-3.5-turbo from OpenAI API as our annotator, you will require an OpenAI api and org key to run the LLM annotation active learning loop. The --use_LLM argument is just a flag that lets the script know that you will be using the LLM annotations.
+Since we have used GPT-3.5-turbo from OpenAI API as our annotator, you will require an OpenAI api and org key to run the LLM annotation active learning loop. The `--use_LLM` argument is just a flag that lets the script know that you will be using the LLM annotations.
 
 ## Evaluation:
 
@@ -74,13 +74,13 @@ For evaluation, we write our own evaluation script which can be run as given bel
 ```
 python3 -u evaluate.py  --model_path <PATH TO SAVED MODEL> --download_elmo
 ```
-You can download our saved checkpoints from [here](https://drive.google.com/drive/folders/1YxL6qHy_iLkGA0PbfNxI65bdDzDxD3z7?usp=sharing) and see the results as in the paper. For reference (logs for the training runs are under the folder logs/AL/):
+You can download our saved checkpoints from [here](https://drive.google.com/drive/folders/1YxL6qHy_iLkGA0PbfNxI65bdDzDxD3z7?usp=sharing) and see the results as in the paper. For reference (logs for the training runs are under the folder `logs/AL/`):
 
-seq2emo_NoAL_20k.pt, seq2emo_NoAL_25k.pt, seq2emo_NoAL_30k.pt: These correspond to models training for 10 epochs without Active learning with 20k, 25k and 30k data points from the training set respectively. Corresponding log files: no_AL_20k.txt, no_AL_25k.txt, no_AL_30k.txt
+`seq2emo_NoAL_20k.pt`, `seq2emo_NoAL_25k.pt`, `seq2emo_NoAL_30k.pt`: These correspond to models training for 10 epochs without Active learning with 20k, 25k and 30k data points from the training set respectively. Corresponding log files: `no_AL_20k.txt`, `no_AL_25k.txt`, `no_AL_30k.txt`
 
-seq2emo_25K_NoLLM.pt: This corresponds to the model trained with active learning in a simulated environment with annotations from the target label set instead of the LLM annotations. Corresponding log file: AL_25k_NoLLM.txt
+`seq2emo_25K_NoLLM.pt`: This corresponds to the model trained with active learning in a simulated environment with annotations from the target label set instead of the LLM annotations. Corresponding log file: `AL_25k_NoLLM.txt`
 
-seq2emo_25K_LLM.pt: This corresponds to the model trained with active learning with LLM annotation feedback. Corresponding log file: AL_25k_LLM.txt
+`seq2emo_25K_LLM.pt`: This corresponds to the model trained with active learning with LLM annotation feedback. Corresponding log file: `AL_25k_LLM.txt`
 
 
 
