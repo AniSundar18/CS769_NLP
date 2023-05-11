@@ -14,7 +14,7 @@ You also need to use the argument  `--download_elmo` to download the ELMo embedd
 
 The ELMo embeddings are needed for reproducing the results of the baseline.
 
-## Training/evaluation 
+### Training/evaluation 
 The training results of various models are available in the logs folder.
 
 For Seq2Emo (baseline), you can get the classification result of GoEmotions dataset by the following script.   
@@ -47,15 +47,15 @@ python3 -u trainer_lstm_seq2emo.py --dataset goemotions --batch_size 64 --encode
 ```
 The same is available as a script in the file **run.sh**
 
-Our changes to the code mainly exist in the following files,
+<!-- Our changes to the code mainly exist in the following files,
 
 * **trainer_lstm_seq2emo.py**: Modified the code to include various kinds of text encoders.
 * **models/seq2seq_lstm.py**: Minor modifications in order to conduct experiments.
-* **models/seq2seq_skep.py**: Experimenting with certain concepts, not completely done yet.
+* **models/seq2seq_skep.py**: Experimenting with certain concepts, not completely done yet. -->
 
-# Investigating LLM-based Active Learning
+## Investigating LLM-based Active Learning
 
-## Training:
+### Training:
 
 We perform active learning experiments only on the base Seq2Emo model due to GPU and time constraints. An example script to invoke the active learning loop (without LLM annotation) would be as given below:
 ```
@@ -68,7 +68,7 @@ python3 -u trainer_lstm_seq2emo_active.py --dataset goemotions --batch_size 128 
 ```
 Since we have used GPT-3.5-turbo from OpenAI API as our annotator, you will require an OpenAI api and org key to run the LLM annotation active learning loop. The `--use_LLM` argument is just a flag that lets the script know that you will be using the LLM annotations.
 
-## Evaluation:
+### Evaluation:
 
 For evaluation, we write our own evaluation script which can be run as given below:
 ```
