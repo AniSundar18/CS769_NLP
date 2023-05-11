@@ -17,4 +17,6 @@ t --output_path p_models/elmo.pt
 
 #RoBERTa-large
 python3 -u trainer_lstm_seq2emo.py --dataset goemotions --batch_size 64 --encoder_model RoBERTa --glove_path data/glove.840B.300d.txt --download_elmo --seed 0 --transformer_type "large" --log_path logs/roberta_large.txt --output_path p_models/rob_large.pt
-~                                                                                                              
+
+#Active learning with LLM
+#python3 -u trainer_lstm_seq2emo_active.py --dataset goemotions --batch_size 128 --glove_path data/glove.840B.300d.txt --download_elmo --model_save_path <YOUR SAVE PATH> --log_path <YOUR LOG FILE SAVE PATH> --split_mode 20k --openai_api_key <YOUR API KEY> --openai_org_key <YOUR ORG KEY> --use_LLM
