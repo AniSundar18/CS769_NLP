@@ -289,7 +289,7 @@ def main():
                     attention_dropout=args.attention_dropout,
                     args=args
                 )
-        model.load_state_dict(torch.load(args.model))
+        model.load_state_dict(torch.load(args.model_path))
         test_model(model, X_test, y_test)
     else:
         print('Please specify the model path in the arguments!')
