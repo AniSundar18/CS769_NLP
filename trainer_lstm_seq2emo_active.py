@@ -512,8 +512,8 @@ def main():
 
     glove_tokenizer.build_tokenizer(X_train_dev + X_test, vocab_size=VOCAB_SIZE)
     glove_tokenizer.build_embedding(GLOVE_EMB_PATH, dataset_name=data_set_name)
-    X_train, y_train = X_train_dev[:30000], y_train_dev[:30000]
-    X_pool, y_pool = X_train_dev[30000:40000], y_train_dev[30000:40000]
+    X_train, y_train = X_train_dev[:25000], y_train_dev[:25000]
+    X_pool, y_pool = X_train_dev[25000:40000], y_train_dev[25000:40000]
     X_dev, y_dev = X_train_dev[40000:], y_train_dev[40000:]
 
     all_preds = []
