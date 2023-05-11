@@ -71,7 +71,7 @@ parser.add_argument('--shuffle_emo', type=str, default=None)
 parser.add_argument('--single_direction', action='store_true')
 parser.add_argument('--encoder_model', type=str, default='LSTM')
 parser.add_argument('--transformer_type', type=str, default='base')
-parser.add_argument('--model', type=str, default='25k_AL_NoLLM', choices=['20k', '30k', '25k', '25k_AL_NoLLM', '25k_AL_LLM'])
+parser.add_argument('--model_path', type=str, default=None)
 args = parser.parse_args()
 
 if args.log_path is not None:
@@ -270,34 +270,31 @@ def main():
     global X_train_dev, X_test, y_train_dev, y_test
 
     X_train, y_train = X_train_dev[:20000], y_train_dev[:20000]
-
-    glove_tokenizer.build_tokenizer(X_train_dev + X_test, vocab_size=VOCAB_SIZE)
-    glove_tokenizer.build_embedding(GLOVE_EMB_PATH, dataset_name=data_set_name)
-    model = LSTMSeq2Seq(
-                emb_dim=SRC_EMB_DIM,
-                vocab_size=glove_tokenizer.get_vocab_size(),
-                trg_vocab_size=NUM_EMO,
-                src_hidden_dim=SRC_HIDDEN_DIM,
-                trg_hidden_dim=TGT_HIDDEN_DIM,
-                attention_mode=ATTENTION,
-                batch_size=BATCH_SIZE,
-                nlayers=2,
-                nlayers_trg=2,
-                dropout=args.dropout,
-                encoder_dropout=args.encoder_dropout,
-                decoder_dropout=args.decoder_dropout,
-                attention_dropout=args.attention_dropout,
-                args=args
-            )
-    if args.model=='25k_AL_NoLLM':
-        mpath = os.path.join('pretrained_models','seq2emo_25k_NoLLM.pt')
-    elif args.model=='25k_AL_LLM':
-        mpath = os.path.join('pretrained_models','seq2emo_25K_LLM.pt')
-    model.load_state_dict(torch.load(mpath))
-    test_model(model, X_test, y_test)
+    if args.model_path:
+        glove_tokenizer.build_tokenizer(X_train_dev + X_test, vocab_size=VOCAB_SIZE)
+        glove_tokenizer.build_embedding(GLOVE_EMB_PATH, dataset_name=data_set_name)
+        model = LSTMSeq2Seq(
+                    emb_dim=SRC_EMB_DIM,
+                    vocab_size=glove_tokenizer.get_vocab_size(),
+                    trg_vocab_size=NUM_EMO,
+                    src_hidden_dim=SRC_HIDDEN_DIM,
+                    trg_hidden_dim=TGT_HIDDEN_DIM,
+                    attention_mode=ATTENTION,
+                    batch_size=BATCH_SIZE,
+                    nlayers=2,
+                    nlayers_trg=2,
+                    dropout=args.dropout,
+                    encoder_dropout=args.encoder_dropout,
+                    decoder_dropout=args.decoder_dropout,
+                    attention_dropout=args.attention_dropout,
+                    args=args
+                )
+        model.load_state_dict(torch.load(args.model))
+        test_model(model, X_test, y_test)
+    else:
+        print('Please specify the model path in the arguments!')
+        
 
 
 if __name__ == '__main__':
     main()
-
-
