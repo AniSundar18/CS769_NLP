@@ -15,7 +15,7 @@ You also need to use the argument  `--download_elmo` to download the ELMo embedd
 The ELMo embeddings are needed for reproducing the results of the baseline.
 
 ### Training/evaluation 
-The training results of various models are available in the logs folder.
+The training results of various models (reported scores) are available in the logs folder.
 
 For Seq2Emo (baseline), you can get the classification result of GoEmotions dataset by the following script.   
 
