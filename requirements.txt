@@ -1,4 +1,3 @@
-nltk==3.5
 numpy==1.19.2
 text_unidecode==1.3
 allennlp==1.0.0
